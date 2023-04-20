@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS CASE_02</title>
+    <link rel="stylesheet" href="assets/css-reset.css">
+    <link rel="stylesheet" href="assets/fontawesome/css/all.css">
+    <style>
+
+        header {
+            background-color: white;
+            box-shadow: 1px 2px 2px 1px black;
+            position: relative;
+        }
+
+        header > img {
+            height: 100px;
+            margin: 20px;
+        }
+
+        header > nav > ul {
+            font-size: 20px;
+            position: absolute;
+            top: 30px;
+            right: 50px;
+        }
+
+        header > nav > ul > li {
+            display: inline-block;
+            margin: 20px;
+        }
+
+        header > nav > ul > li > a {
+            text-decoration: none;
+        }
+
+        header > nav > ul > li > i {
+            color: steelblue;
+            font-size: 20px;
+        }
+
+        main {
+            position: relative;
+        }
+
+        main > nav {
+            width: 300px;
+            background-color: purple;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+        }
+
+        main > nav > ul {
+            list-style-type: none;
+        }
+
+        main > nav > ul > li {
+            font-size: 20px;
+            margin-bottom: 20px;
+            margin-top: 20px;
+            color: white;
+        }
+
+        main > section {
+            margin-left: 300px;
+            padding: 10px;
+            position: relative;
+        }
+
+        main > section > section {
+            height: 300px;
+            position: relative;
+        }
+
+        main > section > section > div {
+            width: calc(100% / 3);
+            height: 100%;
+            border: 1px solid green;
+            position: absolute;
+        }
+
+        main > section > section > div:nth-child(1) {
+            top: 0;
+            left: 0;
+        }
+
+        main > section > section > div:nth-child(2) {
+            top: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+
+        main > section > section > div:nth-child(3) {
+            top: 0;
+            right: 0;
+        }
+
+        footer {
+            height: 80px;
+            background-color: gray;
+        }
+
+        footer > p {
+            font-weight: bold;
+            text-align: center;
+            color: white;
+            padding-top: 20px;
+            margin-top: -2px;
+        }
+
+    </style>
+
+
+</head>
+<body>
+
+<header>
+    <img src="assets/images/ijse-logo.gif">
+    <nav>
+        <ul>
+            <li><i class="fa-sharp fa-solid fa-house"></i><a href="#">Home</a></li>
+            <li><i class="fa-solid fa-globe"></i> <a href="#">Service</a></li>
+            <li><i class="fa-solid fa-phone"></i> <a href="#">Contact</a></li>
+            <li><i class="fa-sharp fa-solid fa-circle-info"></i> <a href="#">About us</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>Service</li>
+            <li>Contact</li>
+            <li>About</li>
+        </ul>
+    </nav>
+
+    <section>
+
+        <section>
+
+            <div>
+                <img src="assets/images/css.png" alt="logo">
+            </div>
+            <div>
+                <img src="assets/images/css.png" alt="logo">
+            </div>
+            <div>
+                <img src="assets/images/css.png" alt="logo">
+            </div>
+
+        </section>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusamus accusantium alias eum ex maxime
+            quibusdam
+            unde voluptates? Asperiores assumenda distinctio iusto molestiae nisi, numquam obcaecati pariatur sed sit
+            tenetur!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aliquam aperiam aspernatur consectetur
+            doloribus, et eveniet fuga fugiat fugit hic ipsum iste nobis, officia omnis placeat quidem rem repellat
+            tempora.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aliquam aperiam aspernatur consectetur
+            doloribus, et eveniet fuga fugiat fugit hic ipsum iste nobis, officia omnis placeat quidem rem repellat
+            tempora.</p>
+
+        <section>
+
+            <div>
+                <img src="assets/images/css.png" alt="logo">
+            </div>
+            <div>
+                <img src="assets/images/css.png" alt="logo">
+            </div>
+            <div>
+                <img src="assets/images/css.png" alt="logo">
+            </div>
+
+        </section>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusamus accusantium alias eum ex maxime
+            quibusdam
+            unde voluptates? Asperiores assumenda distinctio iusto molestiae nisi, numquam obcaecati pariatur sed sit
+            tenetur!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aliquam aperiam aspernatur consectetur
+            doloribus, et eveniet fuga fugiat fugit hic ipsum iste nobis, officia omnis placeat quidem rem repellat
+            tempora.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aliquam aperiam aspernatur consectetur
+            doloribus, et eveniet fuga fugiat fugit hic ipsum iste nobis, officia omnis placeat quidem rem repellat
+            tempora.</p>
+
+    </section>
+
+</main>
+
+<footer>
+    <p>Developed by IJSE</p>
+</footer>
+
+</body>
+</html>
