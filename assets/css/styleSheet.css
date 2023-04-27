@@ -16,6 +16,7 @@ header{
     background-color: #ECF0F1;
     position: fixed;
     top: 0;
+    z-index: 1;
 }
 
 nav{
@@ -41,5 +42,17 @@ nav>menu>li{
 main{
     width: 100%;
     position: relative;
+    top: 75px;
+    margin: 0;
+    background-color: #ECF0F1;
 }
+
+/*1 st section*/
+main>section:nth-child(1){
+    width: 100%;
+    position: relative;
+    top: 0;
+}
+
+
 
