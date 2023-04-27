@@ -1,4 +1,4 @@
-body{
+body {
     margin: 0;
     position: relative;
     width: 100%;
@@ -6,11 +6,11 @@ body{
 
 
 /* create css styles for header */
-::-webkit-scrollbar{
+::-webkit-scrollbar {
     width: 0;
 }
 
-header{
+header {
     width: 100%;
     height: 75px;
     background-color: #ECF0F1;
@@ -19,17 +19,17 @@ header{
     z-index: 1;
 }
 
-nav{
+nav {
     display: inline-block;
 }
 
-nav>menu{
+nav > menu {
     display: inline-block;
     position: absolute;
     right: 30px;
 }
 
-nav>menu>li{
+nav > menu > li {
     display: inline-block;
     margin-left: 16px;
     margin-right: 16px;
@@ -37,9 +37,14 @@ nav>menu>li{
     font-size: 20px;
 }
 
+nav > menu > li > a {
+    text-decoration: none;
+    color: black;
+}
+
 
 /* create styles for <main> */
-main{
+main {
     width: 100%;
     position: relative;
     top: 75px;
@@ -48,17 +53,132 @@ main{
 }
 
 /*1 st section*/
-main>section:nth-child(1){
+main > section:nth-child(1) {
     width: 100%;
+    height: 800px;
     position: relative;
     top: 0;
 }
 
-main>section:nth-child(1)>img:nth-child(1){
+main > section:nth-child(1) > img:nth-child(1) {
     width: 400px;
+    height: 500px;
     position: absolute;
-    top: 100px;
+    top: 80px;
     right: 150px;
+}
+
+main > section:nth-child(1) > h1 {
+    margin: 0;
+    position: absolute;
+    left: 150px;
+    top: 60px;
+}
+
+main > section:nth-child(1) > h1 > p {
+    font-size: 45px;
+    font-weight: normal;
+    font-family: Inter, sans-serif;
+}
+
+main > section:nth-child(1) > h1 > p > dfn {
+    text-decoration: none;
+    font-style: normal;
+    font-family: Inter, sans-serif;
+}
+
+main > section:nth-child(1) > h1 > p > span {
+    font-size: 50px;
+    color: #1D3F72;
+    font-weight: normal;
+    font-family: rufina, serif;
+}
+
+main > section:nth-child(1) > p:nth-child(3) {
+    position: absolute;
+    top: 235px;
+    left: 150px;
+    font-style: initial;
+    font-family: Inter, sans-serif;
+    background: linear-gradient(to right, rgba(2, 27, 121, 0.88), rgba(5, 117, 230, 0.85), #32B6DF);
+    font-size: 28px;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+main > section:nth-child(1) > p:nth-child(4) {
+    position: absolute;
+    top: 235px;
+    left: 433px;
+    font-style: initial;
+    font-family: Inter, sans-serif;
+    background: linear-gradient(to right, rgba(2, 27, 121, 0.88), rgba(5, 117, 230, 0.85), #32B6DF);
+    font-size: 28px;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+main > section:nth-child(1) > p:nth-child(5) {
+    position: absolute;
+    top: 340px;
+    left: 150px;
+    font-style: normal;
+    font-family: Inter, sans-serif;
+    color: black;
+    font-size: 28px;
+}
+
+main > section:nth-child(1) > h4 {
+    position: absolute;
+    left: 150px;
+    top: 480px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-size: 18px;
+}
+
+main > section:nth-child(1) > img:nth-child(7) {
+    position: absolute;
+    top: 480px;
+    left: 400px;
+    border: 2px solid #0B3067;
+    box-shadow: 9px 4px 5px 3px rgba(4, 21, 49, 0.25);
+    border-radius: 10px;
+}
+
+main > section:nth-child(1) > img:nth-child(8) {
+    position: absolute;
+    top: 480px;
+    left: 500px;
+    border: 2px solid #0B3067;
+    box-shadow: 9px 4px 5px 3px rgba(4, 21, 49, 0.25);
+    border-radius: 10px;
+}
+
+main > section:nth-child(1) > button {
+    height: 75px;
+    width: 300px;
+    position: absolute;
+    left: 150px;
+    background-color: rgba(25, 179, 228, 0.8);
+    top: 600px;
+    border-radius: 10px;
+    border: rgba(25, 179, 228, 0.8);
+}
+
+main > section:nth-child(1) > button > a {
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+    font-style: normal;
+    font-family: Inter, sans-serif;
+    vertical-align: 15px;
+}
+
+main > section:nth-child(1) > button > a > img {
+    width: 50px;
+    height: 50px;
+    margin-left: 30px;
 }
 
 
