@@ -35,3 +35,11 @@ nav>menu>li{
     font-family: 'Inter', sans-serif;
     font-size: 20px;
 }
+
+
+/* create styles for <main> */
+main{
+    width: 100%;
+    position: relative;
+}
+
