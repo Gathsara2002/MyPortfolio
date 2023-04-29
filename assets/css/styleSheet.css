@@ -51,7 +51,9 @@ main {
     background-color: #ECF0F1;
 }
 
+
 /*1 st section*/
+/*Home page*/
 main > section:nth-child(1) {
     width: 100%;
     height: 800px;
@@ -183,7 +185,7 @@ main > section:nth-child(1) > button > a > img {
 
 
 /*2 nd section*/
-
+/*About me*/
 main > section:nth-child(2) {
     width: 100%;
     height: 800px;
@@ -316,7 +318,7 @@ main > section:nth-child(2) > aside > article > div#one > div.one {
     height: 100px;
     left: 5px;
     top: 22px;
-    font-size:50px;
+    font-size: 50px;
 }
 
 main > section:nth-child(2) > aside > article > div#one > div.two {
@@ -333,7 +335,7 @@ main > section:nth-child(2) > aside > article > div#two > div.three {
     height: 100px;
     left: 5px;
     top: 22px;
-    font-size:50px;
+    font-size: 50px;
 }
 
 main > section:nth-child(2) > aside > article > div#two > div.four {
@@ -346,14 +348,15 @@ main > section:nth-child(2) > aside > article > div#two > div.four {
 
 
 /*3 rd section */
-
-main>section:nth-child(3){
+/*skills*/
+main > section:nth-child(3) {
     position: relative;
     width: 100%;
     height: 950px;
     border: 1px solid #6d5c52;
 }
 
+/*Heading*/
 main > section:nth-child(3) > h2 > dfn {
     text-decoration: none;
     font-style: normal;
@@ -372,13 +375,12 @@ main > section:nth-child(3) > h5 {
     font-size: 20px;
 }
 
-main > section:nth-child(3) > h2 ,h5{
+main > section:nth-child(3) > h2, h5 {
     text-align: center;
 }
 
 /*first row of skills*/
-
-main>section:nth-child(3)>section#firstSection{
+main > section:nth-child(3) > section#firstSection {
     position: relative;
     height: 400px;
     width: 1300px;
@@ -388,7 +390,7 @@ main>section:nth-child(3)>section#firstSection{
     justify-content: space-evenly;
 }
 
-main>section:nth-child(3)>section#firstSection>div{
+main > section:nth-child(3) > section#firstSection > div {
     height: 250px;
     width: 250px;
     border: 3px solid #0B3067;
@@ -396,21 +398,20 @@ main>section:nth-child(3)>section#firstSection>div{
     background-position: center;
 }
 
-main>section:nth-child(3)>section#firstSection>div:nth-child(1){
+main > section:nth-child(3) > section#firstSection > div:nth-child(1) {
     background-image: url("../images/java.png");
 }
 
-main>section:nth-child(3)>section#firstSection>div:nth-child(2){
+main > section:nth-child(3) > section#firstSection > div:nth-child(2) {
     background-image: url("../images/mysql-icon.png");
 }
 
-main>section:nth-child(3)>section#firstSection>div:nth-child(3){
+main > section:nth-child(3) > section#firstSection > div:nth-child(3) {
     background-image: url("../images/uiux.jpg");
 }
 
 /*second row of skills*/
-
-main>section:nth-child(3)>section#secondSection{
+main > section:nth-child(3) > section#secondSection {
     position: relative;
     height: 400px;
     width: 1300px;
@@ -421,8 +422,7 @@ main>section:nth-child(3)>section#secondSection{
     border: 1px solid greenyellow;
 }
 
-
-main>section:nth-child(3)>section#secondSection>div{
+main > section:nth-child(3) > section#secondSection > div {
     height: 250px;
     width: 250px;
     border: 3px solid #0B3067;
@@ -430,17 +430,90 @@ main>section:nth-child(3)>section#secondSection>div{
     background-position: center;
 }
 
-main>section:nth-child(3)>section#secondSection>div:nth-child(1){
+main > section:nth-child(3) > section#secondSection > div:nth-child(1) {
     background-image: url("../images/html-icon.png");
 }
 
-main>section:nth-child(3)>section#secondSection>div:nth-child(2){
+main > section:nth-child(3) > section#secondSection > div:nth-child(2) {
     background-image: url("../images/css-icon.png");
 }
 
-main>section:nth-child(3)>section#secondSection>div:nth-child(3){
+main > section:nth-child(3) > section#secondSection > div:nth-child(3) {
     background-image: url("../images/analytics.png");
 }
+
+
+/*4 th section*/
+/*achievements*/
+main > section:nth-child(4) {
+    position: relative;
+    width: 100%;
+    height: 800px;
+    border: 1px solid hotpink;
+}
+
+main > section:nth-child(4) > h2 > dfn {
+    text-decoration: none;
+    font-style: normal;
+    font-family: 'Inter', sans-serif;
+    font-size: 40px;
+}
+
+main > section:nth-child(4) > h5 {
+    position: relative;
+    left: 0;
+    top: 0;
+    margin-top: 0;
+    font-family: 'Rosarivo', " IWSujeeva";
+    font-weight: lighter;
+    font-size: 20px;
+}
+
+main > section:nth-child(4) > h2, h5 {
+    text-align: center;
+}
+
+main > section:nth-child(4) > div#certificates {
+    position: absolute;
+    height: 550px;
+    width: 800px;
+    top: 150px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-image: url("../images/certificate.PNG");
+    background-size: 100% 100%;
+    background-position: center;
+    border: 1px solid black;
+}
+
+main>section:nth-child(4)>div#right{
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    right: 150px;
+    top: 350px;
+    background-image: url("../images/icons8-double-right-96.png");
+    background-size: 100%;
+    background-position: center;
+}
+
+main>section:nth-child(4)>div#left{
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    left: 150px;
+    top: 350px;
+    background-image: url("../images/icons8-double-left-96.png");
+    background-size: 100%;
+    background-position: center;
+}
+
+
+
+
+
+
 
 
 
