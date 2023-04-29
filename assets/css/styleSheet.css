@@ -192,4 +192,31 @@ main > section:nth-child(2) {
     border: 1px solid red;
 }
 
+/*Heading*/
+main > section:nth-child(2) > h2 {
+    margin-bottom: 10px;
+}
+
+main > section:nth-child(2) > h2 > dfn {
+    text-decoration: none;
+    font-style: normal;
+    font-family: 'Inter', sans-serif;
+    font-size: 40px;
+}
+
+main > section:nth-child(2) > h5 {
+    margin-top: 0;
+    margin-left: 35px;
+    font-family: 'Rosarivo', " IWSujeeva";
+    font-weight: lighter;
+    font-size: 20px;
+}
+
+main>section:nth-child(2)>h2,h5{
+    position: relative;
+    left: 650px;
+    top: 15px;
+}
+
+
 
