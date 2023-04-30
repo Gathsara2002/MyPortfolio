@@ -910,6 +910,34 @@ main > section:nth-child(7) > section#msg > button >div{
 }
 
 /*Footer*/
+footer{
+    width: 100%;
+    height: 100px;
+    top: 75px;
+    position: relative;
+    border: 1px solid black;
+    background-color: #0B3067;
+}
+
+footer>small:nth-child(1){
+    font-size: 20px;
+    color: white;
+    font-family: rufina;
+    position: absolute;
+    top: 35px;
+    left: 20px;
+    display: inline-block;
+}
+
+footer>small:nth-child(3){
+    font-size: 20px;
+    color: white;
+    font-family: rufina;
+    position: absolute;
+    top: 35px;
+    right: 20px;
+    display: inline-block;
+}
 
 
 
