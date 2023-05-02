@@ -414,8 +414,7 @@ main > section:nth-child(2) > aside > article > div#two > div.four {
 main > section:nth-child(3) {
     position: relative;
     width: 100%;
-    height: 950px;
-    border: 1px solid #6d5c52;
+    height: 800px;
 }
 
 /*Heading*/
@@ -444,8 +443,10 @@ main > section:nth-child(3) > h2, h5 {
 /*first row of skills*/
 main > section:nth-child(3) > section#firstSection {
     position: relative;
-    height: 400px;
+    height: 300px;
     width: 100%;
+    top: 25px;
+    margin-bottom: 50px;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -474,12 +475,11 @@ main > section:nth-child(3) > section#firstSection > div:nth-child(3) {
 /*second row of skills*/
 main > section:nth-child(3) > section#secondSection {
     position: relative;
-    height: 400px;
+    height: 300px;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    border: 1px solid greenyellow;
 }
 
 main > section:nth-child(3) > section#secondSection > div {
