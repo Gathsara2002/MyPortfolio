@@ -943,7 +943,7 @@ main > section:nth-child(7) > section#msg > button {
     background-color: #19B3E4CC;
 }
 
-main > section:nth-child(7) > section#msg > button:hover{
+main > section:nth-child(7) > section#msg > button:hover {
     background-color: #0b3067;
     color: white;
     cursor: grabbing;
