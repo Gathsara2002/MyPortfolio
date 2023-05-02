@@ -574,7 +574,6 @@ main > section:nth-child(5) {
     position: relative;
     width: 100%;
     height: 600px;
-    border: 1px solid goldenrod;
 }
 
 main > section:nth-child(5) > h2 > dfn {
@@ -607,7 +606,6 @@ main > section:nth-child(5) > section#service {
     right: 0;
     bottom: 0;
     margin: auto;
-    border: 1px solid lawngreen;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -623,7 +621,6 @@ main > section:nth-child(5) > section#service > div {
 
 main > section:nth-child(5) > section#service > div > img {
     width: 100px;
-    border: 1px solid mediumvioletred;
     position: absolute;
     top: 25px;
     left: 25px;
@@ -643,7 +640,6 @@ main > section:nth-child(5) > section#service > div > p {
 }
 
 main > section:nth-child(5) > section#service > div > h4 {
-    border: 1px solid mediumvioletred;
     position: absolute;
     left: 25px;
     bottom: 10px;
