@@ -199,9 +199,8 @@ main > section:nth-child(1) > button > a > div {
 /*About me*/
 main > section:nth-child(2) {
     width: 100%;
-    height: 800px;
+    height: 750px;
     position: relative;
-    border: 1px solid red;
 }
 
 /*Heading*/
@@ -233,7 +232,7 @@ main > section:nth-child(2) > div#profile {
     height: 325px;
     position: absolute;
     left: 100px;
-    top: 220px;
+    top: 200px;
     background-position: center;
     background-size: 100% 100%;
 }
@@ -261,6 +260,7 @@ main > section:nth-child(2) > aside > article > p {
     font-size: 24px;
     font-family: Inter, sans-serif;
     font-style: normal;
+    margin: 0;
 }
 
 #abbr {
@@ -273,21 +273,73 @@ main > section:nth-child(2) > aside > article > p:nth-child(2) {
     left: 50px;
 }
 
-main > section:nth-child(2) > aside > article > p:nth-child(3) {
+main > section:nth-child(2) > aside > article > p:nth-child(2) > em {
+    margin-left: 48px;
+}
+
+main > section:nth-child(2) > aside > article > div.underline1 {
+    height: 1px;
+    width: 350px;
+    background-color: black;
+    position: absolute;
+    top: 230px;
+    left: 50px;
+}
+
+main > section:nth-child(2) > aside > article > p:nth-child(4) {
     position: absolute;
     top: 200px;
     left: 450px;
 }
 
-main > section:nth-child(2) > aside > article > p:nth-child(4) {
+main > section:nth-child(2) > aside > article > p:nth-child(4) > em {
+    margin-left: 218px;
+}
+
+main > section:nth-child(2) > aside > article > div.underline2 {
+    height: 1px;
+    width: 375px;
+    background-color: black;
+    position: absolute;
+    top: 230px;
+    left: 450px;
+}
+
+main > section:nth-child(2) > aside > article > p:nth-child(6) {
     position: absolute;
     top: 300px;
     left: 50px;
 }
 
-main > section:nth-child(2) > aside > article > p:nth-child(5) {
+main > section:nth-child(2) > aside > article > p:nth-child(6) > em {
+    margin-left: 90px;
+}
+
+main > section:nth-child(2) > aside > article > div.underline3 {
+    height: 1.5px;
+    width: 350px;
+    background-color: black;
+    position: absolute;
+    top: 330px;
+    left: 50px;
+}
+
+main > section:nth-child(2) > aside > article > p:nth-child(8) {
     position: absolute;
     top: 300px;
+    left: 450px;
+}
+
+main > section:nth-child(2) > aside > article > p:nth-child(8)>em{
+    margin-left: 3px;
+}
+
+main > section:nth-child(2) > aside > article > div.underline4 {
+    height: 1.5px;
+    width: 375px;
+    background-color: black;
+    position: absolute;
+    top: 330px;
     left: 450px;
 }
 
