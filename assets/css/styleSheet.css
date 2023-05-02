@@ -147,7 +147,7 @@ main > section:nth-child(1) > img:nth-child(7) {
     top: 522px;
     left: 400px;
     border: 2px solid #0B3067;
-    box-shadow: 9px 4px 5px 3px rgba(4, 21, 49, 0.25);
+    box-shadow: 4px 4px 4px 2px rgba(4, 21, 49, 0.25);
     border-radius: 10px;
 }
 
@@ -156,7 +156,7 @@ main > section:nth-child(1) > img:nth-child(8) {
     top: 522px;
     left: 480px;
     border: 2px solid #0B3067;
-    box-shadow: 9px 4px 5px 3px rgba(4, 21, 49, 0.25);
+    box-shadow: 4px 4px 4px 2px rgba(4, 21, 49, 0.25);
     border-radius: 10px;
 }
 
@@ -330,7 +330,7 @@ main > section:nth-child(2) > aside > article > p:nth-child(8) {
     left: 450px;
 }
 
-main > section:nth-child(2) > aside > article > p:nth-child(8)>em{
+main > section:nth-child(2) > aside > article > p:nth-child(8) > em {
     margin-left: 3px;
 }
 
@@ -815,9 +815,8 @@ main > section:nth-child(6) > section#thirdProject > div:nth-child(2) {
 /*contact*/
 main > section:nth-child(7) {
     width: 100%;
-    height: 750px;
+    height: 800px;
     position: relative;
-    border: 1px solid darkslategray;
 }
 
 main > section:nth-child(7) > h2 > dfn {
@@ -844,7 +843,6 @@ main > section:nth-child(7) > h2, h5 {
 main > section:nth-child(7) > section#info {
     width: 47%;
     height: 50%;
-    border: 1px solid sienna;
     position: absolute;
     left: 0;
     top: 150px;
@@ -919,17 +917,15 @@ main > section:nth-child(7) > section#msg {
     top: 150px;
     right: 0;
     bottom: 0;
-    border: 1px solid rebeccapurple;
 }
 
 main > section:nth-child(7) > section#msg > article {
-    height: 450px;
+    height: 500px;
     position: absolute;
     left: 20px;
     top: 0;
     right: 150px;
     margin: auto;
-    border: 1px solid crimson;
 }
 
 main > section:nth-child(7) > section#msg > button {
@@ -937,7 +933,7 @@ main > section:nth-child(7) > section#msg > button {
     width: 280px;
     position: absolute;
     left: 20px;
-    top: 500px;
+    top: 525px;
     text-align: left;
     padding-left: 30px;
     font-size: 22px;
@@ -945,6 +941,12 @@ main > section:nth-child(7) > section#msg > button {
     border-radius: 10px;
     border: none;
     background-color: #19B3E4CC;
+}
+
+main > section:nth-child(7) > section#msg > button:hover{
+    background-color: #0b3067;
+    color: white;
+    cursor: grabbing;
 }
 
 main > section:nth-child(7) > section#msg > button > div {
@@ -958,6 +960,54 @@ main > section:nth-child(7) > section#msg > button > div {
     bottom: 0;
     right: 25px;
     margin: auto;
+}
+
+::placeholder {
+    padding-left: 10px;
+    font-size: 20px;
+}
+
+main > section:nth-child(7) > section#msg > article > form > div > input {
+    width: 450px;
+    height: 50px;
+    border-radius: 10px;
+    position: absolute;
+    border: 2px solid grey;
+    padding-left: 10px;
+}
+
+main > section:nth-child(7) > section#msg > article > form > div > input:focus {
+    outline-color: #0B3067;
+}
+
+main > section:nth-child(7) > section#msg > article > form > div:nth-child(1) > input {
+    top: 0;
+    left: 0;
+}
+
+main > section:nth-child(7) > section#msg > article > form > div:nth-child(2) > input {
+    top: 75px;
+    left: 0;
+}
+
+main > section:nth-child(7) > section#msg > article > form > div:nth-child(3) > input {
+    top: 150px;
+    left: 0;
+}
+
+main > section:nth-child(7) > section#msg > article > form > div:nth-child(4) > textarea {
+    width: 450px;
+    height: 250px;
+    border-radius: 10px;
+    position: absolute;
+    top: 225px;
+    left: 0;
+    border: 2px solid grey;
+    padding-left: 10px;
+}
+
+main > section:nth-child(7) > section#msg > article > form > div:nth-child(4) > textarea:focus {
+    outline-color: #0B3067;
 }
 
 /*Footer*/
