@@ -58,10 +58,9 @@ main {
 /*Home page*/
 main > section:nth-child(1) {
     width: 100%;
-    height: 800px;
+    height: 750px;
     position: relative;
     top: 0;
-    border: 1px solid black;
 }
 
 main > section:nth-child(1) > img:nth-child(1) {
@@ -83,6 +82,7 @@ main > section:nth-child(1) > h1 > p {
     font-size: 45px;
     font-weight: lighter;
     font-family: Inter, sans-serif;
+    margin-top: 20px;
 }
 
 main > section:nth-child(1) > h1 > p > dfn {
@@ -125,7 +125,7 @@ main > section:nth-child(1) > p:nth-child(4) {
 
 main > section:nth-child(1) > p:nth-child(5) {
     position: absolute;
-    top: 340px;
+    top: 350px;
     left: 150px;
     font-style: normal;
     font-family: Inter, sans-serif;
@@ -136,15 +136,15 @@ main > section:nth-child(1) > p:nth-child(5) {
 main > section:nth-child(1) > h4 {
     position: absolute;
     left: 150px;
-    top: 480px;
-    font-family: 'Inter', sans-serif;
+    top: 510px;
+    font-family: itim, cursive;
     font-style: normal;
     font-size: 18px;
 }
 
 main > section:nth-child(1) > img:nth-child(7) {
     position: absolute;
-    top: 480px;
+    top: 522px;
     left: 400px;
     border: 2px solid #0B3067;
     box-shadow: 9px 4px 5px 3px rgba(4, 21, 49, 0.25);
@@ -153,8 +153,8 @@ main > section:nth-child(1) > img:nth-child(7) {
 
 main > section:nth-child(1) > img:nth-child(8) {
     position: absolute;
-    top: 480px;
-    left: 500px;
+    top: 522px;
+    left: 480px;
     border: 2px solid #0B3067;
     box-shadow: 9px 4px 5px 3px rgba(4, 21, 49, 0.25);
     border-radius: 10px;
@@ -166,9 +166,10 @@ main > section:nth-child(1) > button {
     position: absolute;
     left: 150px;
     background-color: rgba(25, 179, 228, 0.8);
-    top: 600px;
+    top: 630px;
     border-radius: 10px;
     border: rgba(25, 179, 228, 0.8);
+    text-align: center;
 }
 
 main > section:nth-child(1) > button > a {
@@ -177,13 +178,20 @@ main > section:nth-child(1) > button > a {
     font-size: 25px;
     font-style: normal;
     font-family: Inter, sans-serif;
-    vertical-align: 15px;
+    padding-right: 60px;
 }
 
-main > section:nth-child(1) > button > a > img {
+main > section:nth-child(1) > button > a > div {
+    background-image: url("../images/download-icon.png");
     width: 50px;
     height: 50px;
-    margin-left: 30px;
+    position: absolute;
+    right: 20px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background-size: 100% 100%;
+    background-position: center;
 }
 
 
