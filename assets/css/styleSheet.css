@@ -85,7 +85,7 @@ main > section:nth-child(1) > h1 > p {
     margin-top: 20px;
 }
 
-main > section:nth-child(1) > h1 > p > dfn {
+main > section:nth-child(1) > h1 > p {
     text-decoration: none;
     font-style: normal;
     font-weight: lighter;
