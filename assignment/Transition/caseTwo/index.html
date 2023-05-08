@@ -17,33 +17,46 @@
             background-color: #0697de;
         }
 
-        section > div#main {
+        section > div {
             height: 300px;
             width: 300px;
-            border-radius: 100%;
-            border: 20px solid white;
-            border-top-color: red;
-            background-color: grey;
             position: absolute;
             top: 0;
             right: 0;
             left: 0;
             bottom: 0;
             margin: auto;
+            cursor: pointer;
         }
 
-        section > p {
-            position: relative;
-            top: 350px;
-            font-size: 35px;
+        section > div > h2 {
             color: white;
-            text-align: center;
+            position: absolute;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            margin: auto;
+            width: max-content;
+            height: max-content;
         }
 
-        section > div#main:hover {
-            cursor: grabbing;
+        section > div::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            border-radius: 100%;
+            border: 20px solid white;
+            border-top-color: red;
+            background-color: grey;
+        }
+
+        section > div:hover::before {
             transform: rotate(360deg);
-            transition-duration: 2s;
+            transition: all, 2s;
         }
 
     </style>
@@ -52,10 +65,9 @@
 <body>
 
 <section>
-    <div id="main"></div>
-    <p>
-        GDSE
-    </p>
+    <div>
+        <h2>RWAD</h2>
+    </div>
 </section>
 
 </body>
