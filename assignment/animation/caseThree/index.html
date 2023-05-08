@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Animation Case03</title>
+    <link rel="stylesheet" href="assets/css-reset.css">
+    <style>
+        * {
+            margin: 0;
+        }
+
+        section {
+            width: 1000px;
+            height: 540px;
+            background-color: white;
+            position: relative;
+        }
+
+        section > div {
+            width: 200px;
+            height: 100px;
+            background: #32B6DF;
+            border-radius: 10px;
+            position: relative;
+            top: 20px;
+            left: 20px;
+            animation: my-animation;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+
+        @keyframes my-animation {
+            0% {
+                background: darkblue;
+                top: 20px;
+                left: 20px;
+            }
+
+            25% {
+                background: yellow;
+                top: 20px;
+                left: 980px;
+                transform: rotate(180deg);
+            }
+
+            50% {
+                background: red;
+                top: 540px;
+                left: 980px;
+                transform: rotate(360deg);
+            }
+
+            75% {
+                background: deeppink;
+                top: 540px;
+                left: 20px;
+                transform: rotate(180deg);
+            }
+
+            100% {
+                background: orange;
+                top: 20px;
+                left: 20px;
+                transform: rotate(360deg);
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+<section>
+    <div></div>
+</section>
+
+</body>
+</html>
