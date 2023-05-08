@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Animation Case04</title>
+    <link rel="stylesheet" href="assets/css-reset.css">
+    <style>
+
+        body > div {
+            width: 10px;
+            height: 10px;
+            border-radius: 100%;
+            border: 3px solid red;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+            animation: my-animation;
+            animation-iteration-count: infinite;
+            animation-duration: 2s;
+        }
+
+        @keyframes my-animation {
+            from {
+                width: 10px;
+                height: 10px;
+            }
+            to {
+                width: 200px;
+                height: 200px;
+                opacity: 0;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+<div></div>
+
+</body>
+</html>
