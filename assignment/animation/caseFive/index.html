@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Animation Case05</title>
+    <link rel="stylesheet" href="assets/css-reset.css">
+    <style>
+
+        main {
+            width: 100vw;
+            height: 100vh;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        main > section {
+            width: 500%;
+            height: 100%;
+            display: flex;
+            animation-name: slider;
+            animation-delay: 1s;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            transition-timing-function: cubic-bezier(0.25,0.1,0.25,0);
+        }
+
+        main > section > div {
+            width: 100%;
+            height: 100%;
+        }
+
+        main > section > div:nth-child(1) {
+            background-image: url("assets/wallpaperflare.com_wallpaper (1).jpg");
+            background-position: center;
+            background-size: cover;
+        }
+
+        main > section > div:nth-child(2) {
+            background-image: url("assets/wallpaperflare.com_wallpaper (2).jpg");
+            background-position: center;
+            background-size: cover;
+        }
+
+        main > section > div:nth-child(3) {
+            background-image: url("assets/wallpaperflare.com_wallpaper (3).jpg");
+            background-position: center;
+            background-size: cover;
+        }
+
+        main > section > div:nth-child(4) {
+            background-image: url("assets/wallpaperflare.com_wallpaper (4).jpg");
+            background-position: center;
+            background-size: cover;
+        }
+
+        main > section > div:nth-child(5) {
+            background-image: url("assets/wallpaperflare.com_wallpaper.jpg");
+            background-position: center;
+            background-size: cover;
+        }
+
+        @keyframes slider {
+            0% {
+                transform: translateX(0);
+            }
+
+            25% {
+                transform: translateX(-20%);
+            }
+
+            50% {
+                transform: translateX(-40%);
+            }
+
+            75% {
+                transform: translateX(-60%);
+            }
+
+            100% {
+                transform: translateX(-80%);
+            }
+        }
+    </style>
+</head>
+
+<body>
+<main>
+    <section>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </section>
+</main>
+</body>
+</html>
