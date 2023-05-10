@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Animation Case06</title>
+    <link rel="stylesheet" href="assets/css-reset.css">
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        main {
+            width: 100vw;
+            height: 100vh;
+            position: relative;
+            overflow: hidden;
+        }
+
+        main > section#sky {
+            width: 100vw;
+            height: 72vh;
+            background-image: url("assets/sky.jpg");
+            background-position: center;
+            background-size: cover;
+            position: relative;
+        }
+
+        main > section#road {
+            width: 200%;
+            height: 28vh;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            margin: auto;
+            display: flex;
+            animation-name: road;
+            animation-iteration-count: infinite;
+            animation-duration: 5s;
+        }
+
+        main > section#road > div {
+            width: 50%;
+            height: 28vh;
+            background-image: url("assets/road.jpg");
+            background-position: center;
+            background-size: cover;
+        }
+
+        @keyframes road {
+            0% {
+                transform: translateX(0);
+            }
+
+            100% {
+                transform: translateX(-50%);
+            }
+        }
+
+        main > section#town {
+            width: 200%;
+            height: 35vh;
+            position: absolute;
+            left: 0;
+            bottom: 28vh;
+            right: 0;
+            margin: auto;
+            display: flex;
+            animation-name: town;
+            animation-iteration-count: infinite;
+            animation-duration: 5s;
+        }
+
+        main > section#town > div {
+            width: 50%;
+            height: 35vh;
+            background-image: url("assets/city.png");
+            background-position: center;
+            background-size: cover;
+        }
+
+        @keyframes town {
+            0% {
+                transform: translateX(0);
+            }
+
+            100% {
+                transform: translateX(-50%);
+            }
+        }
+
+        main > section#car {
+            width: 380px;
+            height: 160px;
+            background-image: url("assets/car.png");
+            background-position: center;
+            background-size: cover;
+            position: absolute;
+            left: 0;
+            bottom: 130px;
+            right: 0;
+            margin: auto;
+        }
+
+        main > section#car > div.frontWheel {
+            width: 70px;
+            height: 70px;
+            background-image: url("assets/wheel.png");
+            background-position: center;
+            background-size: cover;
+            position: absolute;
+            bottom: 5px;
+            right: 43px;
+        }
+
+        main > section#car > div.backWheel {
+            width: 70px;
+            height: 70px;
+            background-image: url("assets/wheel.png");
+            background-position: center;
+            background-size: cover;
+            position: absolute;
+            bottom: 5px;
+            left: 31px;
+        }
+
+        main > section#car > div {
+            animation-name: wheel;
+            animation-duration: 5s;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+
+        @keyframes wheel {
+            0% {
+                transform: rotate(0deg);
+
+            }
+            50% {
+                transform: rotate(360deg);
+
+            }
+            100% {
+                transform: rotate(240deg);
+            }
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<main>
+
+    <section id="sky"></section>
+
+    <section id="road">
+        <div></div>
+        <div></div>
+    </section>
+
+    <section id="town">
+        <div></div>
+        <div></div>
+    </section>
+
+    <section id="car">
+        <div class="frontWheel"></div>
+        <div class="backWheel"></div>
+    </section>
+
+</main>
+
+</body>
+</html>
