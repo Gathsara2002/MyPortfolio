@@ -669,7 +669,7 @@ main > section:nth-child(6) {
     position: relative;
 }
 
-main > section:nth-child(6) > h2{
+main > section:nth-child(6) > h2 {
     position: relative;
     top: 75px;
     margin-bottom: 10px;
@@ -830,11 +830,14 @@ main > section:nth-child(6) > section#thirdProject > div:nth-child(2) {
 /*contact*/
 main > section:nth-child(7) {
     width: 100%;
-    height: 800px;
+    height: 850px;
     position: relative;
 }
 
-main > section:nth-child(7) > h2 > dfn {
+main > section:nth-child(7) > h2 {
+    position: relative;
+    top: 75px;
+    margin-bottom: 10px;
     text-decoration: none;
     font-style: normal;
     font-family: 'Inter', sans-serif;
@@ -844,7 +847,7 @@ main > section:nth-child(7) > h2 > dfn {
 main > section:nth-child(7) > h5 {
     position: relative;
     left: 0;
-    top: 0;
+    top: 75px;
     margin-top: 0;
     font-family: 'Rosarivo', " IWSujeeva";
     font-weight: lighter;
@@ -860,7 +863,7 @@ main > section:nth-child(7) > section#info {
     height: 50%;
     position: absolute;
     left: 0;
-    top: 150px;
+    top: 250px;
 }
 
 main > section:nth-child(7) > section#info > div:nth-child(1) {
@@ -929,7 +932,7 @@ main > section:nth-child(7) > section#info > p {
 main > section:nth-child(7) > section#msg {
     width: 53%;
     position: absolute;
-    top: 150px;
+    top: 225px;
     right: 0;
     bottom: 0;
 }
