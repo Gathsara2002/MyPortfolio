@@ -665,11 +665,14 @@ main > section:nth-child(5) > section#service > div > h4 {
 /*projects*/
 main > section:nth-child(6) {
     width: 100%;
-    height: 1500px;
+    height: 1575px;
     position: relative;
 }
 
-main > section:nth-child(6) > h2 > dfn {
+main > section:nth-child(6) > h2{
+    position: relative;
+    top: 75px;
+    margin-bottom: 10px;
     text-decoration: none;
     font-style: normal;
     font-family: 'Inter', sans-serif;
@@ -679,7 +682,7 @@ main > section:nth-child(6) > h2 > dfn {
 main > section:nth-child(6) > h5 {
     position: relative;
     left: 0;
-    top: 0;
+    top: 75px;
     margin-top: 0;
     font-family: 'Rosarivo', " IWSujeeva";
     font-weight: lighter;
@@ -693,7 +696,7 @@ main > section:nth-child(6) > h2, h5 {
 main > section:nth-child(6) > section#firstProject {
     position: absolute;
     height: 400px;
-    top: 150px;
+    top: 225px;
     left: 100px;
     right: 100px;
     margin: auto;
@@ -733,7 +736,7 @@ main > section:nth-child(6) > section#firstProject > div:nth-child(2) {
 main > section:nth-child(6) > section#secondProject {
     position: absolute;
     height: 400px;
-    top: 600px;
+    top: 675px;
     left: 100px;
     right: 100px;
     margin: auto;
@@ -785,7 +788,7 @@ main > section:nth-child(6) > section#secondProject > p {
 main > section:nth-child(6) > section#thirdProject {
     position: absolute;
     height: 400px;
-    top: 1050px;
+    top: 1125px;
     left: 100px;
     right: 100px;
     margin: auto;
