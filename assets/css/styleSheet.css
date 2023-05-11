@@ -517,7 +517,7 @@ main > section:nth-child(4) {
     height: 800px;
 }
 
-main > section:nth-child(4) > h2 > dfn {
+main > section:nth-child(4) > h2 {
     text-decoration: none;
     font-style: normal;
     font-family: 'Inter', sans-serif;
