@@ -246,12 +246,23 @@ main > section:nth-child(2) > h2, h5 {
     text-align: center;
 }
 
-main > section:nth-child(2) > div#profile {
-    width: 300px;
-    height: 325px;
+main > section:nth-child(2) > div {
+    width: 315px;
+    height: 300px;
+    border-radius: 10px;
+    border: 2px solid #042D6C;
     position: absolute;
-    left: 100px;
-    top: 275px;
+    left: 120px;
+    top: 320px;
+}
+
+main > section:nth-child(2) > div > div#profile {
+    width: 315px;
+    height: 300px;
+    background-image: url("../images/Profile.png");
+    position: absolute;
+    left: 20px;
+    top: 20px;
     background-position: center;
     background-size: 100% 100%;
 }
@@ -1010,7 +1021,7 @@ main > section:nth-child(7) > section#msg > button {
 main > section:nth-child(7) > section#msg > button:hover {
     background-color: #0b3067;
     color: white;
-    cursor: grabbing;
+    cursor: pointer;
 }
 
 main > section:nth-child(7) > section#msg > button > div {
