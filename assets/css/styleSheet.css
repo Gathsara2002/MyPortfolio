@@ -424,6 +424,7 @@ main > section:nth-child(3) > h2 {
     position: relative;
     top: 75px;
     margin-top: 0;
+    margin-bottom: 10px;
     text-decoration: none;
     font-style: normal;
     font-family: 'Inter', sans-serif;
@@ -518,6 +519,7 @@ main > section:nth-child(4) {
 }
 
 main > section:nth-child(4) > h2 {
+    margin-bottom: 10px;
     text-decoration: none;
     font-style: normal;
     font-family: 'Inter', sans-serif;
@@ -557,7 +559,7 @@ main > section:nth-child(4) > div#right {
     height: 70px;
     position: absolute;
     right: 150px;
-    top: 350px;
+    top: 370px;
     background-image: url("../images/icons8-double-right-96.png");
     background-size: 100%;
     background-position: center;
@@ -568,7 +570,7 @@ main > section:nth-child(4) > div#left {
     height: 70px;
     position: absolute;
     left: 150px;
-    top: 350px;
+    top: 370px;
     background-image: url("../images/icons8-double-left-96.png");
     background-size: 100%;
     background-position: center;
