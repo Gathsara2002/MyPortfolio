@@ -1,5 +1,5 @@
 /*create smooth effect to navigation*/
-html{
+html {
     scroll-behavior: smooth;
 }
 
@@ -147,7 +147,19 @@ main > section:nth-child(1) > h4 {
     font-size: 18px;
 }
 
+main > section:nth-child(1) > h4 > div {
+    height: 2px;
+    width: 80px;
+    background-color: black;
+    margin: 0;
+    position: absolute;
+    left: 140px;
+    top: 11px;
+}
+
 main > section:nth-child(1) > img:nth-child(7) {
+    width: 40px;
+    height: 40px;
     position: absolute;
     top: 522px;
     left: 400px;
@@ -634,6 +646,15 @@ main > section:nth-child(5) > section#service > div {
     height: 400px;
     border-radius: 10px;
     border: 2.5px solid #0B3067;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+main > section:nth-child(5) > section#service > div:hover {
+    transition: all 0.2s;
+    transform: scale(1.1);
+    background-color: white;
+    cursor: pointer;
 }
 
 main > section:nth-child(5) > section#service > div > img {
@@ -718,9 +739,16 @@ main > section:nth-child(6) > section#firstProject > div:nth-child(1) {
     font-size: 28px;
     font-family: inter;
     font-weight: normal;
-    border: 1px solid darkblue;
     text-align: center;
     padding-bottom: 16px;
+    border-radius: 10px;
+    background: linear-gradient(to right, darkblue 4px, transparent 4px) 0 0,
+    linear-gradient(to left, darkblue 4px, transparent 4px) 100% 100%,
+    linear-gradient(to bottom, darkblue 4px, transparent 4px) 0 0,
+    linear-gradient(to top, darkblue 4px, transparent 4px) 100% 100%;
+    background-repeat: no-repeat;
+    background-size: 50px 50px;
+
 }
 
 main > section:nth-child(6) > section#firstProject > div:nth-child(2) {
@@ -758,6 +786,7 @@ main > section:nth-child(6) > section#secondProject > div:nth-child(1) {
     border-radius: 10px;
     background-size: 100% 100%;
     background-position: center;
+
 }
 
 main > section:nth-child(6) > section#secondProject > div:nth-child(3) {
@@ -785,9 +814,15 @@ main > section:nth-child(6) > section#secondProject > p {
     font-size: 28px;
     font-family: inter;
     font-weight: normal;
-    border: 1px solid darkblue;
     text-align: center;
     padding-top: 30px;
+    border-radius: 10px;
+    background: linear-gradient(to right, darkblue 4px, transparent 4px) 0 0,
+    linear-gradient(to left, darkblue 4px, transparent 4px) 100% 100%,
+    linear-gradient(to bottom, darkblue 4px, transparent 4px) 0 0,
+    linear-gradient(to top, darkblue 4px, transparent 4px) 100% 100%;
+    background-repeat: no-repeat;
+    background-size: 50px 50px;
 }
 
 main > section:nth-child(6) > section#thirdProject {
@@ -825,9 +860,15 @@ main > section:nth-child(6) > section#thirdProject > div:nth-child(2) {
     font-size: 28px;
     font-family: inter;
     font-weight: normal;
-    border: 1px solid darkblue;
     text-align: center;
     padding-bottom: 16px;
+    border-radius: 10px;
+    background: linear-gradient(to right, darkblue 4px, transparent 4px) 0 0,
+    linear-gradient(to left, darkblue 4px, transparent 4px) 100% 100%,
+    linear-gradient(to bottom, darkblue 4px, transparent 4px) 0 0,
+    linear-gradient(to top, darkblue 4px, transparent 4px) 100% 100%;
+    background-repeat: no-repeat;
+    background-size: 50px 50px;
 }
 
 
