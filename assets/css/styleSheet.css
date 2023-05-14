@@ -883,15 +883,15 @@ main > section:nth-child(6) > section#thirdProject > div:nth-child(2) {
 }
 
 
-/*7 th section*/
+/*8 th section*/
 /*contact*/
-main > section:nth-child(7) {
+main > section:nth-child(8) {
     width: 100%;
     height: 850px;
     position: relative;
 }
 
-main > section:nth-child(7) > h2 {
+main > section:nth-child(8) > h2 {
     position: relative;
     top: 75px;
     margin-bottom: 10px;
@@ -901,7 +901,7 @@ main > section:nth-child(7) > h2 {
     font-size: 40px;
 }
 
-main > section:nth-child(7) > h5 {
+main > section:nth-child(8) > h5 {
     position: relative;
     left: 0;
     top: 75px;
@@ -911,11 +911,11 @@ main > section:nth-child(7) > h5 {
     font-size: 20px;
 }
 
-main > section:nth-child(7) > h2, h5 {
+main > section:nth-child(8) > h2, h5 {
     text-align: center;
 }
 
-main > section:nth-child(7) > section#info {
+main > section:nth-child(8) > section#info {
     width: 47%;
     height: 50%;
     position: absolute;
@@ -923,7 +923,7 @@ main > section:nth-child(7) > section#info {
     top: 250px;
 }
 
-main > section:nth-child(7) > section#info > div:nth-child(1) {
+main > section:nth-child(8) > section#info > div:nth-child(1) {
     height: 60px;
     width: 60px;
     background-image: url("../images/mail-icon.png");
@@ -933,13 +933,13 @@ main > section:nth-child(7) > section#info > div:nth-child(1) {
     left: 100px;
 }
 
-main > section:nth-child(7) > section#info > address#mail {
+main > section:nth-child(8) > section#info > address#mail {
     position: absolute;
     left: 200px;
     top: 20px;
 }
 
-main > section:nth-child(7) > section#info > address > a {
+main > section:nth-child(8) > section#info > address > a {
     text-decoration: none;
     color: black;
     font-size: 24px;
@@ -948,7 +948,7 @@ main > section:nth-child(7) > section#info > address > a {
     font-weight: lighter;
 }
 
-main > section:nth-child(7) > section#info > div:nth-child(3) {
+main > section:nth-child(8) > section#info > div:nth-child(3) {
     height: 50px;
     width: 50px;
     background-image: url("../images/phone-icon.png");
@@ -959,13 +959,13 @@ main > section:nth-child(7) > section#info > div:nth-child(3) {
     top: 100px;
 }
 
-main > section:nth-child(7) > section#info > address#tele {
+main > section:nth-child(8) > section#info > address#tele {
     position: absolute;
     left: 200px;
     top: 110px;
 }
 
-main > section:nth-child(7) > section#info > div:nth-child(5) {
+main > section:nth-child(8) > section#info > div:nth-child(5) {
     height: 50px;
     width: 50px;
     background-image: url("../images/location.png");
@@ -976,7 +976,7 @@ main > section:nth-child(7) > section#info > div:nth-child(5) {
     top: 200px;
 }
 
-main > section:nth-child(7) > section#info > p {
+main > section:nth-child(8) > section#info > p {
     font-size: 24px;
     font-style: normal;
     font-family: inter, sans-serif;
@@ -986,7 +986,7 @@ main > section:nth-child(7) > section#info > p {
     top: 180px;
 }
 
-main > section:nth-child(7) > section#msg {
+main > section:nth-child(8) > section#msg {
     width: 53%;
     position: absolute;
     top: 225px;
@@ -994,7 +994,7 @@ main > section:nth-child(7) > section#msg {
     bottom: 0;
 }
 
-main > section:nth-child(7) > section#msg > article {
+main > section:nth-child(8) > section#msg > article {
     height: 500px;
     position: absolute;
     left: 20px;
@@ -1003,7 +1003,7 @@ main > section:nth-child(7) > section#msg > article {
     margin: auto;
 }
 
-main > section:nth-child(7) > section#msg > button {
+main > section:nth-child(8) > section#msg > button {
     height: 65px;
     width: 280px;
     position: absolute;
@@ -1018,13 +1018,13 @@ main > section:nth-child(7) > section#msg > button {
     background-color: #19B3E4CC;
 }
 
-main > section:nth-child(7) > section#msg > button:hover {
+main > section:nth-child(8) > section#msg > button:hover {
     background-color: #0b3067;
     color: white;
     cursor: pointer;
 }
 
-main > section:nth-child(7) > section#msg > button > div {
+main > section:nth-child(8) > section#msg > button > div {
     width: 50px;
     height: 50px;
     background-image: url("../images/send-icon.png");
@@ -1042,7 +1042,7 @@ main > section:nth-child(7) > section#msg > button > div {
     font-size: 20px;
 }
 
-main > section:nth-child(7) > section#msg > article > form > div > input {
+main > section:nth-child(8) > section#msg > article > form > div > input {
     width: 450px;
     height: 50px;
     border-radius: 10px;
@@ -1051,26 +1051,26 @@ main > section:nth-child(7) > section#msg > article > form > div > input {
     padding-left: 10px;
 }
 
-main > section:nth-child(7) > section#msg > article > form > div > input:focus {
+main > section:nth-child(8) > section#msg > article > form > div > input:focus {
     outline-color: #0B3067;
 }
 
-main > section:nth-child(7) > section#msg > article > form > div:nth-child(1) > input {
+main > section:nth-child(8) > section#msg > article > form > div:nth-child(1) > input {
     top: 0;
     left: 0;
 }
 
-main > section:nth-child(7) > section#msg > article > form > div:nth-child(2) > input {
+main > section:nth-child(8) > section#msg > article > form > div:nth-child(2) > input {
     top: 75px;
     left: 0;
 }
 
-main > section:nth-child(7) > section#msg > article > form > div:nth-child(3) > input {
+main > section:nth-child(8) > section#msg > article > form > div:nth-child(3) > input {
     top: 150px;
     left: 0;
 }
 
-main > section:nth-child(7) > section#msg > article > form > div:nth-child(4) > textarea {
+main > section:nth-child(8) > section#msg > article > form > div:nth-child(4) > textarea {
     width: 450px;
     height: 250px;
     border-radius: 10px;
@@ -1081,7 +1081,7 @@ main > section:nth-child(7) > section#msg > article > form > div:nth-child(4) > 
     padding-left: 10px;
 }
 
-main > section:nth-child(7) > section#msg > article > form > div:nth-child(4) > textarea:focus {
+main > section:nth-child(8) > section#msg > article > form > div:nth-child(4) > textarea:focus {
     outline-color: #0B3067;
 }
 
