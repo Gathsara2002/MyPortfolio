@@ -3073,7 +3073,6 @@ footer > small:nth-child(3) {
     }
 
     /*-----------------------------------------------------------------------------------------------*/
-
     main > section:nth-child(7) {
         width: 100%;
         height: 225px;
@@ -3164,6 +3163,194 @@ footer > small:nth-child(3) {
 
     main > section:nth-child(7) > section#thirdAssignmentRow > h5 {
         display: none;
+    }
+
+    /*------------------------------------------------------------------------------------------------*/
+    main > section:nth-child(8) {
+        width: 100%;
+        height: 670px;
+        position: relative;
+    }
+
+    main > section:nth-child(8) > h5 {
+        position: relative;
+        left: 0;
+        top: 55px;
+        margin-top: 0;
+        font-family: 'Rosarivo', " IWSujeeva";
+        font-weight: lighter;
+        font-size: 15px;
+    }
+
+    main > section:nth-child(8) > h2 {
+        position: relative;
+        top: 55px;
+        margin-bottom: 5px;
+        text-decoration: none;
+        font-style: normal;
+        font-family: 'Inter', sans-serif;
+        font-size: 22px;
+    }
+
+    main > section:nth-child(8) > h2, h5 {
+        text-align: center;
+    }
+
+    main > section:nth-child(8) > section#msg {
+        width: 70%;
+        height: 325px;
+        position: absolute;
+        top: 125px;
+        right: 15%;
+        left: 15%;
+    }
+
+    main > section:nth-child(8) > section#msg > article {
+        height: 260px;
+        position: absolute;
+        left: 10px;
+        top: 0;
+        right: 10px;
+        margin: 0;
+    }
+
+    main > section:nth-child(8) > section#msg > button {
+        height: 50px;
+        width: 150px;
+        position: absolute;
+        left: 65px;
+        top: 270px;
+        text-align: left;
+        padding-left: 10px;
+        font-size: 15px;
+        font-family: Inter, cursive;
+        border-radius: 5px;
+        border: none;
+        background-color: #19B3E4CC;
+    }
+
+    main > section:nth-child(8) > section#msg > button > div {
+        width: 27px;
+        height: 27px;
+        background-image: url("../images/send-icon.png");
+        background-size: 100% 100%;
+        background-position: center;
+        position: absolute;
+        top: 5px;
+        bottom: 5px;
+        right: 10px;
+        margin: auto;
+    }
+
+    main > section:nth-child(8) > section#msg > article > form > div > input {
+        width: 250px;
+        height: 30px;
+        border-radius: 5px;
+        position: absolute;
+        border: 1px solid grey;
+        padding-left: 0;
+    }
+
+    main > section:nth-child(8) > section#msg > article > form > div:nth-child(1) > input {
+        top: 0;
+        left: 0;
+    }
+
+    main > section:nth-child(8) > section#msg > article > form > div:nth-child(2) > input {
+        top: 50px;
+        left: 0;
+    }
+
+    main > section:nth-child(8) > section#msg > article > form > div:nth-child(3) > input {
+        top: 100px;
+        left: 0;
+    }
+
+    main > section:nth-child(8) > section#msg > article > form > div:nth-child(4) > textarea {
+        width: 250px;
+        height: 100px;
+        border-radius: 5px;
+        position: absolute;
+        top: 150px;
+        left: 0;
+        border: 1px solid grey;
+        padding-left: 0;
+    }
+
+    ::placeholder {
+        padding-left: 10px;
+        font-size: 13px;
+    }
+
+    main > section:nth-child(8) > section#info {
+        width: 80%;
+        height: 200px;
+        position: absolute;
+        left: 10%;
+        top: 470px;
+    }
+
+    main > section:nth-child(8) > section#info > div:nth-child(1) {
+        height: 35px;
+        width: 35px;
+        background-image: url("../images/mail-icon.png");
+        background-position: center;
+        background-size: 100% 100%;
+        position: absolute;
+        left: 10%;
+    }
+
+    main > section:nth-child(8) > section#info > address#mail {
+        position: absolute;
+        left: 85px;
+        top: 7px;
+    }
+
+    main > section:nth-child(8) > section#info > address > a {
+        text-decoration: none;
+        color: black;
+        font-size: 15px;
+        font-style: normal;
+        font-family: inter, sans-serif;
+        font-weight: lighter;
+    }
+
+    main > section:nth-child(8) > section#info > div:nth-child(3) {
+        height: 30px;
+        width: 30px;
+        background-image: url("../images/phone-icon.png");
+        background-position: center;
+        background-size: 100% 100%;
+        position: absolute;
+        left: 10%;
+        top: 60px;
+    }
+
+    main > section:nth-child(8) > section#info > address#tele {
+        position: absolute;
+        left: 85px;
+        top: 62px;
+    }
+
+    main > section:nth-child(8) > section#info > div:nth-child(5) {
+        height: 30px;
+        width: 30px;
+        background-image: url("../images/location.png");
+        background-position: center;
+        background-size: 100% 100%;
+        position: absolute;
+        left: 10%;
+        top: 120px;
+    }
+
+    main > section:nth-child(8) > section#info > p {
+        font-size: 15px;
+        font-style: normal;
+        font-family: inter, sans-serif;
+        font-weight: lighter;
+        position: absolute;
+        left: 85px;
+        top: 105px;
     }
 
 }
