@@ -1259,7 +1259,6 @@ footer {
     height: 100px;
     top: 75px;
     position: relative;
-    border: 1px solid black;
     background-color: #0B3067;
 }
 
@@ -2303,6 +2302,34 @@ footer > small:nth-child(3) {
         top: 105px;
     }
 
+    /*------------------------------------------------------------------------------------------*/
+    footer {
+        width: 100%;
+        height: 55px;
+        top: 55px;
+        position: relative;
+        background-color: #0B3067;
+    }
+
+    footer > small:nth-child(1) {
+        font-size: 13px;
+        color: white;
+        font-family: rufina;
+        position: absolute;
+        top: 10px;
+        left: 37px;
+        display: inline-block;
+    }
+
+    footer > small:nth-child(3) {
+        font-size: 13px;
+        color: white;
+        font-family: rufina;
+        position: absolute;
+        top: 30px;
+        right: 77px;
+        display: inline-block;
+    }
 
 }
 
