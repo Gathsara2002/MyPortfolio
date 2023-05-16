@@ -1323,7 +1323,7 @@ footer > small:nth-child(3) {
 
     main > section#home {
         width: 100%;
-        height: 750px;
+        height: 300px;
         position: relative;
         top: 0;
     }
@@ -1448,7 +1448,225 @@ footer > small:nth-child(3) {
         background-size: 100% 100%;
         background-position: center;
     }
-/*--------------------------------------------------------------------------------------------------------*/
+
+    /*--------------------------------------------------------------------------------------------------------*/
+    main > section#about {
+        width: 100%;
+        height: 635px;
+        position: relative;
+    }
+
+    main > section:nth-child(2) > h2 {
+        position: relative;
+        top: 55px;
+        margin-top: 0;
+        margin-bottom: 10px;
+        text-decoration: none;
+        font-style: normal;
+        font-family: 'Inter', sans-serif;
+        font-size: 20px;
+    }
+
+    main > section:nth-child(2) > h5 {
+        margin-top: 0;
+        margin-left: 0;
+        font-family: 'Rosarivo', " IWSujeeva";
+        font-weight: lighter;
+        font-size: 13px;
+        position: relative;
+        top: 50px;
+    }
+
+    main > section:nth-child(2) > h2, h5 {
+        text-align: center;
+    }
+
+    main > section:nth-child(2) > div {
+        width: 110px;
+        height: 130px;
+        border-radius: 5px;
+        border: 1px solid #042D6C;
+        position: absolute;
+        left: 95px;
+        top: 120px;
+    }
+
+    main > section:nth-child(2) > div > div#profile {
+        width: 110px;
+        height: 130px;
+        background-image: url("../images/Profile.png");
+        position: absolute;
+        left: 5px;
+        top: 5px;
+        background-position: center;
+        background-size: 100% 100%;
+    }
+
+    main > section:nth-child(2) > aside {
+        position: absolute;
+        width: 300px;
+        height: 348px;
+        right: 10px;
+        top: 285px;
+    }
+
+    main > section:nth-child(2) > aside > article {
+        position: absolute;
+        width: 300px;
+        height: 348px;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        margin: auto;
+    }
+
+    main > section:nth-child(2) > aside > article > p {
+        font-size: 12px;
+        font-family: Inter, sans-serif;
+        font-style: normal;
+        margin: 0;
+    }
+
+    .break {
+        display: none;
+    }
+
+    #abbr {
+        text-decoration: none;
+    }
+
+    main > section:nth-child(2) > aside > article > p:nth-child(2) {
+        position: absolute;
+        top: 130px;
+        left: 40px;
+    }
+
+    main > section:nth-child(2) > aside > article > p:nth-child(2) > em {
+        margin-left: 48px;
+    }
+
+    main > section:nth-child(2) > aside > article > div.underline1 {
+        height: 0.7px;
+        width: 200px;
+        background-color: black;
+        position: absolute;
+        top: 145px;
+        left: 40px;
+    }
+
+    main > section:nth-child(2) > aside > article > p:nth-child(4) {
+        position: absolute;
+        top: 160px;
+        left: 40px;
+    }
+
+    main > section:nth-child(2) > aside > article > p:nth-child(4) > em {
+        margin-left: 118px;
+    }
+
+    main > section:nth-child(2) > aside > article > div.underline2 {
+        height: 1px;
+        width: 200px;
+        background-color: black;
+        position: absolute;
+        top: 175px;
+        left: 40px;
+    }
+
+    main > section:nth-child(2) > aside > article > p:nth-child(6) {
+        position: absolute;
+        top: 190px;
+        left: 40px;
+    }
+
+    main > section:nth-child(2) > aside > article > p:nth-child(6) > em {
+        margin-left: 70px;
+    }
+
+    main > section:nth-child(2) > aside > article > div.underline3 {
+        height: 1px;
+        width: 200px;
+        background-color: black;
+        position: absolute;
+        top: 208px;
+        left: 40px;
+    }
+
+    main > section:nth-child(2) > aside > article > p:nth-child(8) {
+        position: absolute;
+        top: 223px;
+        left: 40px;
+    }
+
+    main > section:nth-child(2) > aside > article > p:nth-child(8) > em {
+        margin-left: 13px;
+    }
+
+    main > section:nth-child(2) > aside > article > div.underline4 {
+        height: 1px;
+        width: 200px;
+        background-color: black;
+        position: absolute;
+        top: 238px;
+        left: 40px;
+    }
+
+    main > section:nth-child(2) > aside > article > div {
+        width: 130px;
+        height: 50px;
+        border-radius: 4px;
+        background-color: #042D6C;
+        color: white;
+        position: absolute;
+        top: 270px;
+        font-size: 13px;
+    }
+
+    main > section:nth-child(2) > aside > article > div#one {
+        left: 10px;
+
+    }
+
+    main > section:nth-child(2) > aside > article > div#two {
+        right: 10px;
+    }
+
+    main > section:nth-child(2) > aside > article > div#one > div.one {
+        position: absolute;
+        width: 30px;
+        height: 35px;
+        left: 5px;
+        top: 10px;
+        font-size: 30px;
+    }
+
+    main > section:nth-child(2) > aside > article > div#one > div.two {
+        position: absolute;
+        width: 60px;
+        height: 30px;
+        left: 60px;
+        top: 10px;
+    }
+
+    main > section:nth-child(2) > aside > article > div#two > div.three {
+        position: absolute;
+        width: 30px;
+        height: 35px;
+        left: 5px;
+        top: 10px;
+        font-size: 30px;
+    }
+
+    main > section:nth-child(2) > aside > article > div#two > div.four {
+        position: absolute;
+        width: 60px;
+        height: 30px;
+        left: 60px;
+        top: 10px;
+    }
+
+    /*-------------------------------------------------------------------------------------*/
 
 
 }
