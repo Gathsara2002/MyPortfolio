@@ -2948,6 +2948,129 @@ footer > small:nth-child(3) {
         font-family: Info-Dinesh;
         color: #0287B2;
     }
+
+    /*-------------------------------------------------------------------------------------------*/
+    main > section:nth-child(6) {
+        width: 100%;
+        height: 740px;
+        position: relative;
+    }
+
+    main > section:nth-child(6) > h2 {
+        position: relative;
+        top: 55px;
+        margin-bottom: 5px;
+        text-decoration: none;
+        font-style: normal;
+        font-family: 'Inter', sans-serif;
+        font-size: 22px;
+    }
+
+    main > section:nth-child(6) > h5 {
+        position: relative;
+        left: 0;
+        top: 55px;
+        margin-top: 0;
+        font-family: 'Rosarivo', " IWSujeeva";
+        font-weight: lighter;
+        font-size: 15px;
+    }
+
+    main > section:nth-child(6) > h2, h5 {
+        text-align: center;
+    }
+
+    main > section:nth-child(6) > section#firstProject {
+        position: absolute;
+        width: 335px;
+        height: 180px;
+        top: 130px;
+        left: 20px;
+        right: 20px;
+        bottom: 0;
+        margin: 0;
+    }
+
+    main > section:nth-child(6) > section#firstProject > div:nth-child(1) {
+        display: none;
+
+    }
+
+    main > section:nth-child(6) > section#firstProject > div:nth-child(2) {
+        width: 335px;
+        height: 180px;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        background-image: url("../images/project4.png");
+        border: 1px solid #0B3067;
+        border-radius: 5px;
+        background-size: 100% 100%;
+        background-position: center;
+    }
+
+    main > section:nth-child(6) > section#secondProject {
+        position: absolute;
+        width: 335px;
+        height: 180px;
+        top: 330px;
+        left: 20px;
+        right: 20px;
+        bottom: 0;
+        margin: 0;
+    }
+
+    main > section:nth-child(6) > section#secondProject > div:nth-child(1) {
+        display: none;
+
+    }
+
+    main > section:nth-child(6) > section#secondProject > div:nth-child(3) {
+        width: 335px;
+        height: 180px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-image: url("../images/project2.PNG");
+        border: 1px solid #0B3067;
+        border-radius: 5px;
+        background-size: 100% 100%;
+        background-position: center;
+    }
+
+    main > section:nth-child(6) > section#secondProject > p {
+        display: none;
+    }
+
+    main > section:nth-child(6) > section#thirdProject {
+        position: absolute;
+        width: 335px;
+        height: 180px;
+        top: 535px;
+        left: 20px;
+        right: 20px;
+        margin: 0;
+    }
+
+    main > section:nth-child(6) > section#thirdProject > div:nth-child(1) {
+        width: 335px;
+        height: 180px;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        background-image: url("../images/project3.PNG");
+        border: 1px solid #0B3067;
+        border-radius: 10px;
+        background-size: 100% 100%;
+        background-position: center;
+    }
+
+    main > section:nth-child(6) > section#thirdProject > div:nth-child(2) {
+        display: none;
+    }
 }
 
 
