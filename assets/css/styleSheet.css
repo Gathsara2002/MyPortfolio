@@ -1667,7 +1667,6 @@ footer > small:nth-child(3) {
     }
 
     /*-------------------------------------------------------------------------------------*/
-
     main > section#skills {
         position: relative;
         width: 100%;
@@ -1736,7 +1735,70 @@ footer > small:nth-child(3) {
         background-position: center;
     }
 
-/*--------------------------------------------------------------------------------------------*/
+    /*--------------------------------------------------------------------------------------------*/
+    main > section:nth-child(4) {
+        position: relative;
+        width: 100%;
+        height: 275px;
+    }
+
+    main > section:nth-child(4) > h2 {
+        margin-bottom: 4px;
+        text-decoration: none;
+        font-style: normal;
+        font-family: 'Inter', sans-serif;
+        font-size: 20px;
+    }
+
+    main > section:nth-child(4) > h5 {
+        position: relative;
+        left: 0;
+        top: 0;
+        margin-top: 0;
+        font-family: 'Rosarivo', " IWSujeeva";
+        font-weight: lighter;
+        font-size: 13px;
+    }
+
+    main > section:nth-child(4) > h2, h5 {
+        text-align: center;
+    }
+
+    main > section:nth-child(4) > div#certificates {
+        position: absolute;
+        height: 150px;
+        width: 200px;
+        top: 65px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        background-image: url("../images/certificate.PNG");
+        background-size: 100% 100%;
+        background-position: center;
+        border: 1px solid black;
+    }
+
+    main > section:nth-child(4) > div#right {
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        right: 12px;
+        top: 128px;
+        background-image: url("../images/icons8-double-right-96.png");
+        background-size: 100%;
+        background-position: center;
+    }
+
+    main > section:nth-child(4) > div#left {
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        left: 12px;
+        top: 128px;
+        background-image: url("../images/icons8-double-left-96.png");
+        background-size: 100%;
+        background-position: center;
+    }
 }
 
 
