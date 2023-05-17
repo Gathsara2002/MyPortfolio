@@ -3771,6 +3771,77 @@ footer > small:nth-child(3) {
     }
 
     /*-------------------------------------------------------------------------------------------------*/
+    main > section#skills {
+        position: relative;
+        width: 100%;
+        height: 350px;
+    }
+
+    main > section:nth-child(3) > h2 {
+        position: relative;
+        top: 55px;
+        margin-top: 0;
+        margin-bottom: 10px;
+        text-decoration: none;
+        font-style: normal;
+        font-family: 'Inter', sans-serif;
+        font-size: 23px;
+    }
+
+    main > section:nth-child(3) > h5 {
+        position: relative;
+        top: 50px;
+        left: 0;
+        margin-top: 0;
+        margin-left: 0;
+        font-family: 'Rosarivo', " IWSujeeva";
+        font-weight: lighter;
+        font-size: 16px;
+    }
+
+    main > section:nth-child(3) > h2, h5 {
+        text-align: center;
+    }
+
+    main > section:nth-child(3) > section#firstSection {
+        position: relative;
+        height: 100px;
+        width: 100%;
+        top: 50px;
+        margin-bottom: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    main > section:nth-child(3) > section#firstSection > div {
+        height: 90px;
+        width: 90px;
+        border: 1px solid #0B3067;
+        background-size: 100% 100%;
+        background-position: center;
+    }
+
+    main > section:nth-child(3) > section#secondSection {
+        position: relative;
+        height: 100px;
+        width: 100%;
+        top: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    main > section:nth-child(3) > section#secondSection > div {
+        height: 90px;
+        width: 90px;
+        border: 1px solid #0B3067;
+        background-size: 100% 100%;
+        background-position: center;
+    }
+
+    /*----------------------------------------------------------------------------------------------------*/
+
 
 }
 
