@@ -5509,7 +5509,7 @@ footer > small:nth-child(3) {
         position: relative;
     }
 
-    main > section:nth-child(7) > section#thirdAssignmentRow > a>div{
+    main > section:nth-child(7) > section#thirdAssignmentRow > a > div {
         width: 130px;
         height: 120px;
         border: 1px solid beige;
@@ -5545,7 +5545,182 @@ footer > small:nth-child(3) {
         right: 24px;
     }
 
+    /*---------------------------------------------------------------------------------------------*/
+    main > section:nth-child(8) {
+        width: 100%;
+        height: 850px;
+        position: relative;
+    }
 
+    main > section:nth-child(8) > h5 {
+        position: relative;
+        left: 0;
+        top: 60px;
+        margin-top: 0;
+        font-family: 'Rosarivo', " IWSujeeva";
+        font-weight: lighter;
+        font-size: 18px;
+    }
+
+    main > section:nth-child(8) > h2 {
+        position: relative;
+        top: 65px;
+        margin-bottom: 10px;
+        text-decoration: none;
+        font-style: normal;
+        font-family: 'Inter', sans-serif;
+        font-size: 28px;
+    }
+
+    main > section:nth-child(8) > h2, h5 {
+        text-align: center;
+    }
+
+    main > section:nth-child(8) > section#info {
+        width: 47%;
+        height: 50%;
+        position: absolute;
+        left: 0;
+        top: 200px;
+    }
+
+    main > section:nth-child(8) > section#info > div:nth-child(1) {
+        height: 40px;
+        width: 40px;
+        background-image: url("../images/mail-icon.png");
+        background-position: center;
+        background-size: 100% 100%;
+        position: absolute;
+        left: 50px;
+    }
+
+    main > section:nth-child(8) > section#info > address#mail {
+        position: absolute;
+        left: 100px;
+        top: 10px;
+    }
+
+    main > section:nth-child(8) > section#info > address > a {
+        text-decoration: none;
+        color: black;
+        font-size: 18px;
+        font-style: normal;
+        font-family: inter, sans-serif;
+        font-weight: lighter;
+    }
+
+    main > section:nth-child(8) > section#info > div:nth-child(3) {
+        height: 35px;
+        width: 35px;
+        background-image: url("../images/phone-icon.png");
+        background-position: center;
+        background-size: 100% 100%;
+        position: absolute;
+        left: 50px;
+        top: 100px;
+    }
+
+    main > section:nth-child(8) > section#info > address#tele {
+        position: absolute;
+        left: 100px;
+        top: 110px;
+    }
+
+    main > section:nth-child(8) > section#info > div:nth-child(5) {
+        height: 35px;
+        width: 35px;
+        background-image: url("../images/location.png");
+        background-position: center;
+        background-size: 100% 100%;
+        position: absolute;
+        left: 50px;
+        top: 200px;
+    }
+
+    main > section:nth-child(8) > section#info > p {
+        font-size: 18px;
+        font-style: normal;
+        font-family: inter, sans-serif;
+        font-weight: lighter;
+        position: absolute;
+        left: 100px;
+        top: 180px;
+    }
+
+    main > section:nth-child(8) > section#msg {
+        right: 0;
+        top: 200px;
+    }
+
+    ::placeholder {
+        padding-left: 10px;
+        font-size: 15px;
+    }
+
+    main > section:nth-child(8) > section#msg > article > form > div > input {
+        width: 300px;
+        height: 30px;
+        border-radius: 7px;
+        position: absolute;
+        border: 1px solid grey;
+        padding-left: 10px;
+    }
+
+    main > section:nth-child(8) > section#msg > article > form > div:nth-child(1) > input {
+        top: 0;
+        left: 0;
+    }
+
+    main > section:nth-child(8) > section#msg > article > form > div:nth-child(2) > input {
+        top: 50px;
+        left: 0;
+    }
+
+    main > section:nth-child(8) > section#msg > article > form > div:nth-child(3) > input {
+        top: 100px;
+        left: 0;
+    }
+
+    main > section:nth-child(8) > section#msg > article > form > div:nth-child(4) > textarea {
+        width: 300px;
+        height: 150px;
+        border-radius: 7px;
+        position: absolute;
+        top: 150px;
+        left: 0;
+        border: 1px solid grey;
+        padding-left: 10px;
+    }
+
+    main > section:nth-child(8) > section#msg > button {
+        height: 50px;
+        width: 200px;
+        position: absolute;
+        left: 20px;
+        top: 350px;
+        text-align: left;
+        padding-left: 15px;
+        font-size: 18px;
+        font-family: Inter, cursive;
+        border-radius: 7px;
+        border: none;
+        background-color: #19B3E4CC;
+    }
+
+    main > section:nth-child(8) > section#msg > button > div {
+        width: 30px;
+        height: 30px;
+        background-image: url("../images/send-icon.png");
+        background-size: 100% 100%;
+        background-position: center;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 15px;
+        margin: auto;
+    }
+
+    /*------------------------------------------------------------------------------------------------------*/
 
 
 }
