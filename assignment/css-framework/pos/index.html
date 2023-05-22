@@ -5,8 +5,21 @@
     <title>CSS Framework - POS</title>
     <meta content="width=device-width, initial-scale=1" name="viewport">
     <link rel="stylesheet" href="assets/css-reset.css">
-    <link rel="stylesheet" href="assets/fontawesome/css/all.css">
     <link rel="stylesheet" href="assets/css/bootstrap.css">
+
+    <style>
+        *{
+            font-family: 'Titillium Web', sans-serif;
+        }
+
+        .icon{
+            width: 75px;
+            height: 75px;
+            top: 10px;
+            left: 10px;
+        }
+    </style>
+
 </head>
 <body>
 <header>
@@ -21,7 +34,7 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ">
+                <ul class="navbar-nav me-auto">
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="#">Home</a>
                     </li>
@@ -35,17 +48,83 @@
                         <a class="nav-link" href="#">Orders</a>
                     </li>
                 </ul>
-            </div>
-            <div class="d-grid gap-3 d-md-flex justify-content-md-end">
-                <button type="button" class="btn btn-outline-primary">Sign Up</button>
-                <button type="button" class="btn btn-outline-danger">Log Out</button>
+                <div class="d-grid gap-3 d-md-flex justify-content-md-end">
+                    <button type="button" class="btn btn-outline-primary">Sign Up</button>
+                    <button type="button" class="btn btn-outline-danger">Log Out</button>
+                </div>
             </div>
         </div>
     </nav>
 </header>
 
-<main>
-<!--content-->
+<!--dashboard-->
+<main class="container-fluid mt-5">
+
+    <section class="row  p-5 m-4 bg-secondary-subtle">
+
+        <!--1st card-->
+        <div class="col-3">
+            <div class="card">
+                <div class="card-header bg-info lead text-center fw-bold">Customer</div>
+                <div class="card-body">
+                    <div class="icon">
+                        <img src="assets/images/customer.png" alt="logo">
+                    </div>
+                    <div class="total">
+                        <h2 class="text-end text-black-50 mt-3">100</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--2 nd card-->
+        <div class="col-3">
+            <div class="card">
+                <div class="card-header bg-warning lead text-center fw-bold">Items</div>
+                <div class="card-body">
+                    <div class="icon">
+                        <img src="assets/images/option.png" alt="logo">
+                    </div>
+                    <div class="total">
+                        <h2 class="text-end text-black-50 mt-3">25</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--3rd card-->
+        <div class="col-3">
+            <div class="card">
+                <div class="card-header bg-danger lead text-center fw-bold">Orders</div>
+                <div class="card-body">
+                    <div class="icon">
+                        <img src="assets/images/checkout.png" alt="logo">
+                    </div>
+                    <div class="total">
+                        <h2 class="text-end text-black-50 mt-3">2500</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--4th card -->
+        <div class="col-3">
+            <div class="card">
+                <div class="card-header bg-info lead text-center fw-bold">Sales</div>
+                <div class="card-body">
+                    <div class="icon">
+                        <img src="assets/images/increasing.png" alt="logo">
+                    </div>
+                    <div class="total">
+                        <h2 class="text-end text-black-50 mt-3">10,000 $ </h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
 </main>
 
 </body>
