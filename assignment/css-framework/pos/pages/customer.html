@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Customer Page</title>
+    <link rel="stylesheet" href="../assets/css/bootstrap.css">
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary shadow p-3 mb-2 bg-body-tertiary rounded">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img alt="Logo" class="d-inline-block align-text-center" height="44" src="../assets/images/cart.gif"
+                     width="50">POS System</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Customer</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Items</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Orders</a>
+                    </li>
+                </ul>
+                <div class="d-grid gap-3 d-md-flex justify-content-md-end">
+                    <button type="button" class="btn btn-outline-primary">Sign Up</button>
+                    <button type="button" class="btn btn-outline-danger">Log Out</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<main class="container">
+
+    <!--Customer Form and Buttons-->
+    <section class="row mt-4 d-flex justify-content-between">
+
+        <!--Customer Form-->
+        <div class="col-6">
+
+            <h2 class="fw-bold text-start mb-3">Customer Form</h2>
+
+            <form>
+                <div class="mb-3">
+                    <label for="customerName" class="form-label">Customer Name</label>
+                    <input type="text" class="form-control" id="customerName" aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3">
+                    <label for="address" class="form-label">Address</label>
+                    <input type="text" class="form-control" id="address">
+                </div>
+                <div class="mb-3">
+                    <label for="nic" class="form-label">NIC</label>
+                    <input type="text" class="form-control" id="nic">
+                </div>
+                <div class="mb-3">
+                    <label for="tpNo" class="form-label">Tele No</label>
+                    <input type="number" class="form-control" id="tpNo">
+                </div>
+            </form>
+
+        </div>
+
+        <!--Buttons-->
+        <div class="col-4 mt-5">
+            <button type="button" class="btn btn-outline-primary btn-lg d-grid  col-8 mb-3 ">Save Customer</button>
+            <button type="button" class="btn btn-outline-success btn-lg d-grid col-8 mb-3">Delete Customer</button>
+            <button type="button" class="btn btn-outline-danger btn-lg d-grid  col-8 mb-3">Update Customer</button>
+            <button type="button" class="btn btn-outline-warning btn-lg d-grid  col-8 mb-3">Get All</button>
+        </div>
+
+    </section>
+
+    <!--Customer Table-->
+    <section class="row container-fluid">
+        <table class="table table-bordered table-hover">
+            <thead class="bg-info-subtle text-black text-center">
+            <tr>
+                <th>Customer Name</th>
+                <th>Customer Address</th>
+                <th>Customer NIC</th>
+                <th>Contact</th>
+            </tr>
+            </thead>
+
+            <tbody></tbody>
+
+        </table>
+    </section>
+
+</main>
+
+</body>
+</html>
