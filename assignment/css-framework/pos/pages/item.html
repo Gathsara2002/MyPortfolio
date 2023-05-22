@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Customer Page</title>
+    <title>Item Page</title>
     <link rel="stylesheet" href="../assets/css/bootstrap.css">
 </head>
 
@@ -24,10 +24,10 @@
                         <a class="nav-link" href="../index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Customer</a>
+                        <a class="nav-link" href="customer.html">Customer</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="item.html">Items</a>
+                        <a class="nav-link active" aria-current="page" href="#">Items</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Orders</a>
@@ -44,30 +44,30 @@
 
 <main class="container">
 
-    <!--Customer Form and Buttons-->
+    <!--Item Form and Buttons-->
     <section class="row mt-4 d-flex justify-content-between">
 
-        <!--Customer Form-->
+        <!--Item Form-->
         <div class="col-6">
 
-            <h2 class="fw-bold text-start mb-3">Customer Form</h2>
+            <h2 class="fw-bold text-start mb-3">Item Form</h2>
 
             <form>
                 <div class="mb-3">
-                    <label for="customerName" class="form-label">Customer Name</label>
-                    <input type="text" class="form-control" id="customerName" aria-describedby="emailHelp">
+                    <label for="itemCode" class="form-label">Item Code</label>
+                    <input type="text" class="form-control" id="itemCode">
                 </div>
                 <div class="mb-3">
-                    <label for="address" class="form-label">Address</label>
-                    <input type="text" class="form-control" id="address">
+                    <label for="itemName" class="form-label">Item Name</label>
+                    <input type="text" class="form-control" id="itemName">
                 </div>
                 <div class="mb-3">
-                    <label for="nic" class="form-label">NIC</label>
-                    <input type="text" class="form-control" id="nic">
+                    <label for="price" class="form-label">Unit Price</label>
+                    <input type="text" class="form-control" id="price">
                 </div>
                 <div class="mb-3">
-                    <label for="tpNo" class="form-label">Tele No</label>
-                    <input type="number" class="form-control" id="tpNo">
+                    <label for="qty" class="form-label">Qty On Hand</label>
+                    <input type="number" class="form-control" id="qty">
                 </div>
             </form>
 
@@ -75,23 +75,23 @@
 
         <!--Buttons-->
         <div class="col-4 mt-5">
-            <button type="button" class="btn btn-outline-primary btn-lg d-grid  col-8 mb-3 ">Save Customer</button>
-            <button type="button" class="btn btn-outline-success btn-lg d-grid col-8 mb-3">Delete Customer</button>
-            <button type="button" class="btn btn-outline-danger btn-lg d-grid  col-8 mb-3">Update Customer</button>
+            <button type="button" class="btn btn-outline-primary btn-lg d-grid  col-8 mb-3 ">Save Item</button>
+            <button type="button" class="btn btn-outline-success btn-lg d-grid col-8 mb-3">Delete Item</button>
+            <button type="button" class="btn btn-outline-danger btn-lg d-grid  col-8 mb-3">Update Item</button>
             <button type="button" class="btn btn-outline-warning btn-lg d-grid  col-8 mb-3">Get All</button>
         </div>
 
     </section>
 
-    <!--Customer Table-->
+    <!--Item Table-->
     <section class="row container-fluid">
         <table class="table table-bordered table-hover">
-            <thead class="bg-info-subtle text-black text-center">
+            <thead class="bg-danger-subtle text-black text-center">
             <tr>
-                <th>Customer Name</th>
-                <th>Customer Address</th>
-                <th>Customer NIC</th>
-                <th>Contact</th>
+                <th>Item Code</th>
+                <th>Item Name</th>
+                <th>Unit Price</th>
+                <th>Qty On Hand</th>
             </tr>
             </thead>
 
