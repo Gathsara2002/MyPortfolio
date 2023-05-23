@@ -5866,7 +5866,7 @@ footer > small:nth-child(3) {
     }
 
     main > section:nth-child(2) > h5 {
-        font-size: 22px;
+        font-size: 20px;
         position: relative;
         top: 70px;
     }
@@ -6048,9 +6048,20 @@ footer > small:nth-child(3) {
     }
 
     /*-----------------------------------------------------------------------------------*/
+    main > section:nth-child(3) {
+    }
 
+    main > section:nth-child(3) > h2 {
+        font-size: 36px;
+    }
+
+    /*------------------------------------------------------------------------------------*/
 
 }
+
+
+
+
 
 
 
