@@ -5730,6 +5730,129 @@ footer > small:nth-child(3) {
     }
 }
 
+/*Responsive to 1024px*/
+
+@media all and (min-width: 769px) and (max-width: 1025px) {
+
+    header {
+        width: 99.85vw;
+        height: 75px;
+        background-color: #ECF0F1;
+        position: fixed;
+        top: 0;
+        z-index: 1;
+    }
+
+    main {
+        top: 75px;
+    }
+
+    main > section:nth-child(1) > img:nth-child(1) {
+        width: 300px;
+        height: 350px;
+        position: absolute;
+        top: 70px;
+        right: 80px;
+    }
+
+    main > section:nth-child(1) > h1 {
+        margin: 0;
+        position: absolute;
+        left: 100px;
+        top: 80px;
+    }
+
+    main > section:nth-child(1) > h1 > p {
+        margin-top: 0;
+        font-size: 40px;
+        font-weight: lighter;
+        font-family: Inter, sans-serif;
+    }
+
+    main > section:nth-child(1) > h1 > p > span {
+        font-size: 40px;
+        color: #1D3F72;
+        font-weight: normal;
+        font-family: rufina, serif;
+    }
+
+    main > section:nth-child(1) > p:nth-child(3) {
+        position: absolute;
+        top: 200px;
+        left: 130px;
+        font-style: initial;
+        font-family: Inter, sans-serif;
+        background: linear-gradient(to right, rgba(2, 27, 121, 0.88), rgba(5, 117, 230, 0.85), #32B6DF);
+        font-size: 24px;
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+    }
+
+    main > section:nth-child(1) > p:nth-child(4) {
+        display: none;
+    }
+
+    main > section:nth-child(1) > p:nth-child(5) {
+        position: absolute;
+        top: 290px;
+        left: 90px;
+        font-style: normal;
+        font-family: Inter, sans-serif;
+        color: black;
+        font-size: 21px;
+    }
+
+    main > section:nth-child(1) > h4 {
+        position: absolute;
+        left: 100px;
+        top: 400px;
+        font-family: itim, cursive;
+        font-style: normal;
+        font-size: 18px;
+    }
+
+    main > section:nth-child(1) > img:nth-child(7) {
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        top: 415px;
+        left: 350px;
+        border: 2px solid #0B3067;
+        box-shadow: 4px 4px 4px 2px rgba(4, 21, 49, 0.25);
+        border-radius: 10px;
+    }
+
+    main > section:nth-child(1) > img:nth-child(8) {
+        position: absolute;
+        top: 415px;
+        left: 420px;
+        border: 2px solid #0B3067;
+        box-shadow: 4px 4px 4px 2px rgba(4, 21, 49, 0.25);
+        border-radius: 10px;
+
+    }
+
+    main > section:nth-child(1) > button {
+        top: 530px;
+        left: 120px;
+        width: 262px;
+        height: 57px;
+    }
+
+    main > section:nth-child(21) > button > a {
+        font-size: 22px;
+    }
+
+    main > section:nth-child(1) > button > a > div {
+        width: 40px;
+        height: 40px;
+        right: 30px;
+    }
+    /*-------------------------------------------------------------------------*/
+
+
+}
+
 
 
 
