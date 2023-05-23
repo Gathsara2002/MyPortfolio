@@ -6124,7 +6124,90 @@ footer > small:nth-child(3) {
     }
 
     /*----------------------------------------------------------------------------------*/
+    main > section:nth-child(6) {
+        height: 1375px;
+        position: relative;
+    }
 
+    main > section:nth-child(6) > h2 {
+        font-size: 36px;
+    }
+
+    main > section:nth-child(6) > section#firstProject {
+        height: 350px;
+        top: 200px;
+        left: 50px;
+        right: 50px;
+        margin: auto;
+    }
+
+    main > section:nth-child(6) > section#firstProject > div:nth-child(1) {
+        width: 250px;
+        height: 75px;
+        left: 50px;
+        font-size: 26px;
+        padding-bottom: 40px;
+        background-size: 40px 40px;
+
+    }
+
+    main > section:nth-child(6) > section#firstProject > div:nth-child(2) {
+        width: 580px;
+        height: 320px;
+        position: absolute;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+    }
+
+    main > section:nth-child(6) > section#secondProject {
+        position: absolute;
+        height: 350px;
+        top: 570px;
+        left: 50px;
+        right: 50px;
+        margin: auto;
+    }
+
+    main > section:nth-child(6) > section#secondProject > div:nth-child(1) {
+        width: 330px;
+        height: 240px;
+
+    }
+
+    main > section:nth-child(6) > section#secondProject > div:nth-child(3) {
+        width: 300px;
+        height: 200px;
+    }
+
+    main > section:nth-child(6) > section#secondProject > p {
+        width: 200px;
+        height: 50px;
+        padding-top: 20px;
+        font-size: 26px;
+        background-size: 40px 40px;
+    }
+
+    main > section:nth-child(6) > section#thirdProject {
+        top: 950px;
+        left: 50px;
+        right: 50px;
+    }
+
+    main > section:nth-child(6) > section#thirdProject > div:nth-child(1) {
+        width: 550px;
+        height: 320px;
+    }
+
+    main > section:nth-child(6) > section#thirdProject > div:nth-child(2) {
+        width: 250px;
+        padding-bottom: 0;
+        font-size: 26px;
+        background-size: 40px 40px;
+    }
+
+    /*------------------------------------------------------------------------------------*/
 
 }
 
