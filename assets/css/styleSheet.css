@@ -5747,6 +5747,10 @@ footer > small:nth-child(3) {
         top: 75px;
     }
 
+    main > section:nth-child(1) {
+        height: 635px;
+    }
+
     main > section:nth-child(1) > img:nth-child(1) {
         width: 300px;
         height: 350px;
@@ -5848,7 +5852,202 @@ footer > small:nth-child(3) {
         height: 40px;
         right: 30px;
     }
+
     /*-------------------------------------------------------------------------*/
+    main > section#about {
+        width: 100%;
+        height: 675px;
+        position: relative;
+    }
+
+    main > section:nth-child(2) > h2 {
+        top: 75px;
+        font-size: 36px;
+    }
+
+    main > section:nth-child(2) > h5 {
+        font-size: 22px;
+        position: relative;
+        top: 70px;
+    }
+
+    main > section:nth-child(2) > h2, h5 {
+        text-align: center;
+    }
+
+    main > section:nth-child(2) > div {
+        top: 230px;
+        left: 100px;
+        width: 225px;
+        height: 260px;
+    }
+
+    main > section:nth-child(2) > div > div#profile {
+        width: 230px;
+        left: 15px;
+        top: 15px;
+        height: 260px;
+    }
+
+    main > section:nth-child(2) > aside {
+        position: absolute;
+        top: 200px;
+        right: 75px;
+        width: 550px;
+        height: 450px;
+    }
+
+    main > section:nth-child(2) > aside > article {
+        width: 500px;
+        height: 440px;
+    }
+
+    main > section:nth-child(2) > aside > article > p {
+        font-size: 17px;
+        font-family: Inter, sans-serif;
+        font-style: normal;
+        margin: 0;
+    }
+
+    .break {
+        display: none;
+    }
+
+    #abbr {
+        text-decoration: none;
+    }
+
+    main > section:nth-child(2) > aside > article > p:nth-child(2) {
+        position: absolute;
+        top: 170px;
+        left: 70px;
+    }
+
+    main > section:nth-child(2) > aside > article > p:nth-child(2) > em {
+        margin-left: 60px;
+    }
+
+    main > section:nth-child(2) > aside > article > div.underline1 {
+        height: 0.7px;
+        width: 275px;
+        background-color: black;
+        position: absolute;
+        top: 190px;
+        left: 70px;
+    }
+
+    main > section:nth-child(2) > aside > article > p:nth-child(4) {
+        position: absolute;
+        top: 215px;
+        left: 70px;
+    }
+
+    main > section:nth-child(2) > aside > article > p:nth-child(4) > em {
+        margin-left: 162px;
+    }
+
+    main > section:nth-child(2) > aside > article > div.underline2 {
+        height: 1px;
+        width: 275px;
+        background-color: black;
+        position: absolute;
+        top: 235px;
+        left: 70px;
+    }
+
+    main > section:nth-child(2) > aside > article > p:nth-child(6) {
+        position: absolute;
+        top: 260px;
+        left: 70px;
+    }
+
+    main > section:nth-child(2) > aside > article > p:nth-child(6) > em {
+        margin-left: 85px;
+    }
+
+    main > section:nth-child(2) > aside > article > div.underline3 {
+        height: 1px;
+        width: 275px;
+        background-color: black;
+        position: absolute;
+        top: 277px;
+        left: 70px;
+    }
+
+    main > section:nth-child(2) > aside > article > p:nth-child(8) {
+        position: absolute;
+        top: 305px;
+        left: 70px;
+    }
+
+    main > section:nth-child(2) > aside > article > p:nth-child(8) > em {
+        margin-left: 16px;
+    }
+
+    main > section:nth-child(2) > aside > article > div.underline4 {
+        height: 0.7px;
+        width: 275px;
+        background-color: black;
+        position: absolute;
+        top: 325px;
+        left: 70px;
+    }
+
+    main > section:nth-child(2) > aside > article > div {
+        top: 375px;
+        width: 200px;
+        height: 60px;
+        border-radius: 8px;
+        background-color: #042D6C;
+        color: white;
+        position: absolute;
+        font-size: 18px;
+    }
+
+    main > section:nth-child(2) > aside > article > div#one {
+        left: 20px;
+
+    }
+
+    main > section:nth-child(2) > aside > article > div#two {
+        right: 20px;
+    }
+
+    main > section:nth-child(2) > aside > article > div#one > div.one {
+        position: absolute;
+        width: 50px;
+        height: 40px;
+        left: 20px;
+        top: 10px;
+        font-size: 30px;
+    }
+
+    main > section:nth-child(2) > aside > article > div#one > div.two {
+        position: absolute;
+        width: 80px;
+        height: 40px;
+        left: 90px;
+        top: 10px;
+    }
+
+    main > section:nth-child(2) > aside > article > div#two > div.three {
+        position: absolute;
+        width: 30px;
+        height: 35px;
+        left: 20px;
+        top: 10px;
+        font-size: 30px;
+    }
+
+    main > section:nth-child(2) > aside > article > div#two > div.four {
+        position: absolute;
+        width: 80px;
+        height: 40px;
+        left: 90px;
+        top: 10px;
+    }
+
+    /*-----------------------------------------------------------------------------------*/
 
 
 }
