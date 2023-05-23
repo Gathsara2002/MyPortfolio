@@ -6048,14 +6048,40 @@ footer > small:nth-child(3) {
     }
 
     /*-----------------------------------------------------------------------------------*/
-    main > section:nth-child(3) {
-    }
-
     main > section:nth-child(3) > h2 {
         font-size: 36px;
     }
 
     /*------------------------------------------------------------------------------------*/
+    main > section:nth-child(4) {
+        height: 700px;
+    }
+
+    main > section:nth-child(4) > h2 {
+        font-size: 36px;
+    }
+
+    main > section:nth-child(4) > div#certificates {
+        width: 600px;
+        height: 425px;
+    }
+
+    main > section:nth-child(4) > div#right {
+        width: 60px;
+        height: 60px;
+        top: 335px;
+        right: 100px;
+    }
+
+    main > section:nth-child(4) > div#left {
+        width: 60px;
+        height: 60px;
+        left: 100px;
+        top: 335px;
+    }
+
+    /*-----------------------------------------------------------------------------------*/
+
 
 }
 
