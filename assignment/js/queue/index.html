@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS Queue</title>
+    <link rel="stylesheet" href="assets/css-reset.css">
+    <link rel="stylesheet" href="assets/myStyle.css">
+</head>
+<body>
+
+<h1>
+    Java Script Queue
+</h1>
+<hr>
+
+<section id="main">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+</section>
+
+<script>
+
+    let colors = ["red", "yellow", "green", "blue", "deeppink", "orange"];
+
+    let divArray = document.getElementById("main").children;
+
+    for (let i = 0; i < divArray.length; i++) {
+        divArray[i].style.background = colors[i];
+        //document.getElementById("main").children[i].style.background=colors[i];
+    }
+
+    setInterval(function () {
+        colors.unshift(colors.pop());
+        for (let i = 0; i < divArray.length; i++) {
+            divArray[i].style.background = colors[i];
+        }
+
+    }, 600)
+
+
+</script>
+</body>
+</html>

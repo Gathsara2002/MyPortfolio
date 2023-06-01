@@ -1,0 +1,32 @@
+h1 {
+    text-align: center;
+}
+
+section#main {
+    width: 1000px;
+    height: 400px;
+    display: flex;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    align-items: center;
+}
+
+section#main > div {
+    height: 100px;
+    flex-grow: 1;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+section#main>div:first-child{
+    align-self: start;
+}
+
+section#main > div:last-child {
+    align-self: end;
+}
+
