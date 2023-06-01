@@ -34,7 +34,11 @@
     }
 
     setInterval(function () {
+
+        //iterate color array
         colors.unshift(colors.pop());
+
+        //loop for set colors to div
         for (let i = 0; i < divArray.length; i++) {
             divArray[i].style.background = colors[i];
         }
