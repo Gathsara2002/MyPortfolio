@@ -1,7 +1,11 @@
+h1 {
+    text-align: center;
+    color: whitesmoke;
+}
+
 section#main {
     height: 50px;
     width: 1050px;
-    border: 1px solid black;
     display: flex;
     position: absolute;
     top: 250px;
@@ -13,21 +17,21 @@ section#main {
 section > div {
     flex-grow: 1;
     height: 100%;
-    border: 1px solid black;
+    border: 1px solid white;
 }
 
-div.btn1 {
+button#btn1 {
     width: 100px;
     height: 50px;
     border-radius: 10px;
     position: absolute;
     top: 400px;
     left: 650px;
-    background-color:blue;
+    background-color: blue;
 
 }
 
-div.btn2 {
+button#btn2 {
     width: 100px;
     height: 50px;
     border-radius: 10px;
@@ -41,4 +45,8 @@ h3 {
     margin-top: 14px;
     text-align: center;
     color: white;
+}
+
+body {
+    background-color: black;
 }

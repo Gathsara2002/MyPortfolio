@@ -35,6 +35,9 @@ document.getElementById("orders").addEventListener("click", function () {
 
 /*add customer to table*/
 /*bind event to save customer*/
+
+let cusDB = [];
+
 $("#btnSaveCustomer").click(function () {
 
     /*get customer details from input fields*/
@@ -44,10 +47,60 @@ $("#btnSaveCustomer").click(function () {
     let tel = $("#tpNo").val();
 
     /*create new row*/
-    let tRow = "<tr>" + "<td>" + name + "</td>" + "<td>" + address + "</td>" + "<td>" + nic + "</td>" + "<td>" + tel + "</td>" + "</tr>";
+    //let tRow = "<tr>" + "<td>" + name + "</td>" + "<td>" + address + "</td>" + "<td>" + nic + "</td>" + "<td>" + tel + "</td>" + "</tr>";
 
     /*append to tbody*/
-    $("#tblCustomer").append(tRow);
+    // $("#tblCustomer").append(tRow);
+
+    /*--------------------------------------------------------------------------------------------------------*/
+    /*using array*/
+
+    //let cusArray = [name, address, nic, tel];
+
+    //customer object
+    let customer = {
+        cusName: name,
+        cusAddress: address,
+        cusNic: nic,
+        cusTele: tel
+    }
+
+    cusDB.push(customer);
+
+    /*let row = `<tr>
+        <td>${cusArray[0]}</td>
+        <td>${cusArray[1]}</td>
+        <td>${cusArray[2]}</td>
+        <td>${cusArray[3]}</td>
+        </tr>`;
+
+    $("#tblCustomer").append(row);*/
+
+});
+
+
+/*get all customers*/
+$("#btnGetAllCustomers").click(function () {
+
+    //clear table data
+    $("#tblCustomer").empty();
+
+    for (let i = 0; i < cusDB.length; i++) {
+        let name = cusDB[i].cusName;
+        let address = cusDB[i].cusAddress;
+        let nic = cusDB[i].cusNic;
+        let tel = cusDB[i].cusTele;
+
+        let row = `<tr>
+        <td>${name}</td>
+        <td>${address}</td>
+        <td>${nic}</td>
+        <td>${tel}</td>
+        </tr>`;
+
+        $("#tblCustomer").append(row);
+
+    }
 });
 
 

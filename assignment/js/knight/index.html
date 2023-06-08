@@ -7,6 +7,7 @@
 </head>
 <body>
 
+<h1>Java Script KITT</h1>
 <section id="main">
     <div class="one"></div>
     <div class="tow"></div>
@@ -17,12 +18,69 @@
     <div class="seven"></div>
 </section>
 
-<div class="btn1"><h3>Start</h3></div>
-<div class="btn2"><h3>Stop</h3></div>
+<button id="btn1"><h3>Start</h3></button>
+<button id="btn2"><h3>Stop</h3></button>
 
-<script src="assets/jquery-3.7.0.min.js"></script>
 <script>
+    let left = ["#FFFFFF", "#FFFFFF", "#FFFFFF", "#FFFFFF", "#FFFFFF", "#B22222", "#FF1919", "#FF4C4C", "#FF6666", "#FF9999", "#FFCCCC", "#FFE5E5"];
+    let right = ["#FFFFFF", "#FFFFFF", "#FFFFFF", "#FFFFFF", "#FFFFFF", "#FFFFFF", "#FFE5E5", "#FFCCCC", "#FF9999", "#FF6666", "#FF4C4C", "#FF1919", "#B22222"];
 
+    let divArray = document.getElementById("main").children;
+
+    let animate;
+    let runLeft = true;
+    let count = 0;
+    let value;
+
+    let sound1 = new Audio("assets/audio/KittScanner.mp3");
+    let sound2 = new Audio("assets/audio/Knight-Rider-Theme-Song.mp3");
+
+    document.getElementById("btn1").addEventListener("click", function () {
+        clearInterval(animate);
+
+        animate = setInterval(function () {
+
+            if (runLeft) {
+                for (let i = 0; i < divArray.length; i++) {
+                    divArray[i].style.backgroundColor = left[i];
+                }
+
+                let lastValue = left.pop();
+                left.unshift(lastValue);
+                count++;
+
+                if (count === divArray.length * 2) {
+                    runLeft = false;
+                }
+
+            }
+            if (runLeft === false) {
+
+                let lastColor = right.shift();
+                right.push(lastColor);
+
+                for (let i = 0; i < divArray.length; i++) {
+                    divArray[i].style.backgroundColor = right[i];
+                }
+                count--;
+
+                if (count === 1) {
+                    runLeft = true;
+                }
+            }
+
+        }, 100);
+        sound1.play()
+        sound2.play()
+        sound1.loop = true;
+        sound2.loop = true;
+    });
+
+    document.getElementById("btn2").addEventListener("click", function () {
+        clearInterval(animate);
+        sound1.pause();
+        sound2.pause();
+    });
 </script>
 </body>
 </html>
