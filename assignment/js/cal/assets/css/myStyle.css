@@ -1,0 +1,115 @@
+main {
+    height: 540px;
+    width: 740px;
+    border: 1px solid black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+section#first {
+    height: 100px;
+    width: 700px;
+    border: 1px solid red;
+    position: absolute;
+    top: 20px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+section#first > button {
+    height: 80px;
+    width: 80px;
+    border: 1px solid blue;
+    position: absolute;
+    top: 10px;
+}
+
+section#first > input {
+    height: 80px;
+    width: 600px;
+    border: 1px solid green;
+    position: absolute;
+    top: 10px;
+    right: 0;
+}
+
+section#second {
+    height: 100px;
+    width: 700px;
+    border: 1px solid orange;
+    position: absolute;
+    top: 120px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+section#second > button {
+    height: 80px;
+    width: 150px;
+}
+
+section#third {
+    height: 100px;
+    width: 700px;
+    border: 1px solid orange;
+    position: absolute;
+    top: 220px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+section#third > button {
+    height: 80px;
+    width: 150px;
+}
+
+section#fourth {
+    height: 100px;
+    width: 700px;
+    border: 1px solid orange;
+    position: absolute;
+    top: 320px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+section#fourth > button {
+    height: 80px;
+    width: 150px;
+}
+
+section#fifth {
+    height: 100px;
+    width: 700px;
+    border: 1px solid orange;
+    position: absolute;
+    top: 420px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+section#fifth > button {
+    height: 80px;
+    width: 150px;
+}
