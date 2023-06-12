@@ -34,13 +34,17 @@ section#first > button {
 
 section#first > input {
     height: 80px;
-    width: 600px;
+    width: 580px;
     border: none;
     background-color: white;
     border-radius: 5px;
     position: absolute;
     top: 10px;
     right: 0;
+    font-size: 30px;
+    text-align: right;
+    padding-right: 25px;
+
 }
 
 section#second {
