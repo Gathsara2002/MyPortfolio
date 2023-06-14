@@ -32,11 +32,13 @@ document.getElementById("orders").addEventListener("click", function () {
     document.getElementById("itemPage").style.display = 'none';
     document.getElementById("orderPage").style.display = 'block';
     loadCustomerDetails();
+    loadItemDetails();
 });
 
 /*add customer to table*/
 /*bind event to save customer*/
 
+/*---------------------------customer section--------------------------------------------------------------*/
 let cusDB = [];
 
 $("#btnSaveCustomer").click(function () {
@@ -104,26 +106,6 @@ $("#btnGetAllCustomers").click(function () {
     }
 });
 
-
-/*add item to table*/
-$("#btnSaveItem").click(function () {
-
-    /*get item details from input fields*/
-    let code = $("#itemCode1").val();
-    let name = $("#itemName1").val();
-    let price = $("#price").val();
-    let qty = $("#qty").val();
-
-    /*create new row*/
-    let tRow = ` <tr>
-    <td>${code}</td>
-    <td>${name}</td>
-    <td>${price}</td>
-    <td>${qty}</td>
-    </tr>`;
-
-});
-
 /*load customer details to place order form*/
 
 /*set customer name to combo box*/
@@ -158,4 +140,78 @@ $("#cusId").click(function () {
         }
     }
 });
+
+
+/*--------------------------------------------- item section----------------------------------------------------------*/
+
+let itemDB = [];
+
+/*add item to table*/
+$("#btnSaveItem").click(function () {
+
+    /*get item details from input fields*/
+    let code = $("#itemCode1").val();
+    let name = $("#itemName1").val();
+    let price = $("#price").val();
+    let qty = $("#qty").val();
+
+    let itemObj = {
+        itemCode: code,
+        itemName: name,
+        itemPrice: price,
+        itemQty: qty
+    }
+
+    itemDB.push(itemObj);
+
+    /*create new row*/
+    let tRow = ` <tr>
+    <td>${code}</td>
+    <td>${name}</td>
+    <td>${price}</td>
+    <td>${qty}</td>
+    </tr>`;
+
+    $("#tblItem").append(tRow);
+
+
+});
+
+/*load item details to place order form*/
+
+/*set item code to combo box*/
+function loadItemDetails() {
+
+    //clear combo box
+    $("#itemCode").empty();
+
+    for (let i = 0; i < itemDB.length; i++) {
+        let code = itemDB[i].itemCode;
+        $("#itemCode").append(`<option>${code}</option>`);
+    }
+}
+
+/*set item detail when combo box click*/
+
+$("#itemCode").click(function () {
+
+    let itemCode = $("#itemCode").val();
+
+    for (let i = 0; i < itemDB.length; i++) {
+        if (itemCode === itemDB[i].itemCode) {
+            let name = itemDB[i].itemName;
+            let price = itemDB[i].itemPrice;
+            let qty = itemDB[i].itemQty;
+
+            //set values
+            $("#itemCode").val(itemCode);
+            $("#itemName").val(name);
+            $("#unitPrice").val(price);
+            $("#qtyOnHand").val(qty);
+        }
+    }
+});
+
+
+
 
