@@ -31,6 +31,7 @@ document.getElementById("orders").addEventListener("click", function () {
     document.getElementById("customerPage").style.display = 'none';
     document.getElementById("itemPage").style.display = 'none';
     document.getElementById("orderPage").style.display = 'block';
+    loadCustomerDetails();
 });
 
 /*add customer to table*/
@@ -114,10 +115,23 @@ $("#btnSaveItem").click(function () {
     let qty = $("#qty").val();
 
     /*create new row*/
-    let tRow = "<tr>" + "<td>" + code + "</td>" + "<td>" + name + "</td>" + "<td>" + price + "</td>" + "<td>" + qty + "</td>" + "</tr>";
+    let tRow = ` <tr>
+    <td>${code}</td>
+    <td>${name}</td>
+    <td>${price}</td>
+    <td>${qty}</td>
+    </tr>`;
 
-    /*append to tbody*/
-    $("#tblItem").append(tRow);
 });
+
+/*load customer details to place order form*/
+
+/*set customer name to combo box*/
+function loadCustomerDetails(){
+    for (let i = 0; i < cusDB.length; i++) {
+        let name=cusDB[i].cusName;
+        $("#cusId").append(`<option>${name}</option>`);
+    }
+}
 
 
