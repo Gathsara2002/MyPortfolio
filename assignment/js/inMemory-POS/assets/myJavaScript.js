@@ -127,11 +127,35 @@ $("#btnSaveItem").click(function () {
 /*load customer details to place order form*/
 
 /*set customer name to combo box*/
-function loadCustomerDetails(){
+function loadCustomerDetails() {
+
+    //clear combo box
+    $("#cusId").empty();
+
     for (let i = 0; i < cusDB.length; i++) {
-        let name=cusDB[i].cusName;
+        let name = cusDB[i].cusName;
         $("#cusId").append(`<option>${name}</option>`);
     }
 }
 
+/*set customer detail when combo box click*/
+
+$("#cusId").click(function () {
+
+    let cusName = $("#cusId").val();
+
+    for (let i = 0; i < cusDB.length; i++) {
+        if (cusName === cusDB[i].cusName) {
+            let address = cusDB[i].cusAddress;
+            let nic = cusDB[i].cusNic;
+            let tel = cusDB[i].cusTele;
+
+            //set values
+            $("#nic").val(nic);
+            $("#cusName").val(cusName);
+            $("#address").val(address);
+            $("#cusContact").val(tel);
+        }
+    }
+});
 
