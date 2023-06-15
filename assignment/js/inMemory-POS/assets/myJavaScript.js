@@ -36,7 +36,6 @@ document.getElementById("orders").addEventListener("click", function () {
 });
 
 
-
 /*---------------------------customer section--------------------------------------------------------------*/
 let cusDB = [];
 
@@ -165,6 +164,21 @@ function bindEventtoCustomer() {
         $("#tpNo").val(col4);
 
     });
+}
+
+/*delete customer*/
+$("#btnDeleteCustomer").click(function () {
+    let cusName = $("#customerName").val();
+    deleteCustomer(cusName);
+    getAllCustomer();
+});
+
+function deleteCustomer(id) {
+    for (let i = 0; i < cusDB.length; i++) {
+        if (cusDB[i].cusName === id) {
+            cusDB.splice(i, 1);
+        }
+    }
 }
 
 
