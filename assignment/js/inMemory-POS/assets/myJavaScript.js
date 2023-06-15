@@ -41,6 +41,7 @@ document.getElementById("orders").addEventListener("click", function () {
 /*---------------------------customer section--------------------------------------------------------------*/
 let cusDB = [];
 
+//save customer
 $("#btnSaveCustomer").click(function () {
 
     /*get customer details from input fields*/
@@ -78,13 +79,17 @@ $("#btnSaveCustomer").click(function () {
         </tr>`;
 
     $("#tblCustomer").append(row);*/
+    getAllCustomer();
 
 });
 
 
 /*get all customers*/
 $("#btnGetAllCustomers").click(function () {
+    getAllCustomer();
+});
 
+function getAllCustomer() {
     //clear table data
     $("#tblCustomer").empty();
 
@@ -103,8 +108,10 @@ $("#btnGetAllCustomers").click(function () {
 
         $("#tblCustomer").append(row);
 
+        /*invoke every time when new customer add to table*/
+        bindEvent();
     }
-});
+}
 
 /*load customer details to place order form*/
 
@@ -121,7 +128,6 @@ function loadCustomerDetails() {
 }
 
 /*set customer detail when combo box click*/
-
 $("#cusId").click(function () {
 
     let cusName = $("#cusId").val();
@@ -140,6 +146,25 @@ $("#cusId").click(function () {
         }
     }
 });
+
+/*bind events to table*/
+function bindEvent() {
+    /*get customer detail from table*/
+    $("#tblCustomer>tr").click(function () {
+
+        let col1 = $(this).children().eq(0).text();
+        let col2 = $(this).children().eq(1).text();
+        let col3 = $(this).children().eq(2).text();
+        let col4 = $(this).children().eq(3).text();
+
+        /*set values to input fields*/
+        $("#customerName").val(col1);
+        $("#addressCus").val(col2);
+        $("#nicCus").val(col3);
+        $("#tpNo").val(col4);
+
+    });
+}
 
 
 /*--------------------------------------------- item section----------------------------------------------------------*/
@@ -164,16 +189,7 @@ $("#btnSaveItem").click(function () {
 
     itemDB.push(itemObj);
 
-    /*create new row*/
-    let tRow = ` <tr>
-    <td>${code}</td>
-    <td>${name}</td>
-    <td>${price}</td>
-    <td>${qty}</td>
-    </tr>`;
-
-    $("#tblItem").append(tRow);
-
+    getAllItems();
 
 });
 
@@ -192,7 +208,6 @@ function loadItemDetails() {
 }
 
 /*set item detail when combo box click*/
-
 $("#itemCode").click(function () {
 
     let itemCode = $("#itemCode").val();
@@ -212,6 +227,53 @@ $("#itemCode").click(function () {
     }
 });
 
+function getAllItems() {
+    $("#tblItem").empty();
+
+    for (let i = 0; i < itemDB.length; i++) {
+        let code = itemDB[i].itemCode;
+        let name = itemDB[i].itemName;
+        let price = itemDB[i].itemPrice;
+        let qty = itemDB[i].itemQty;
+
+        /*create new row*/
+        let tRow = ` <tr>
+        <td>${code}</td>
+        <td>${name}</td>
+        <td>${price}</td>
+        <td>${qty}</td>
+        </tr>`;
+
+        $("#tblItem").append(tRow);
+
+        bindEvent();
+
+    }
+}
+
+/*add event to getAll Items Btn*/
+$("#btnGetAllItems").click(function () {
+    getAllItems();
+});
+
+/*bind events to table*/
+function bindEvent() {
+    /*get customer detail from table*/
+    $("#tblItem>tr").click(function () {
+
+        let col1 = $(this).children().eq(0).text();
+        let col2 = $(this).children().eq(1).text();
+        let col3 = $(this).children().eq(2).text();
+        let col4 = $(this).children().eq(3).text();
+
+        /*set values to input fields*/
+        $("#itemCode1").val(col1);
+        $("#itemName1").val(col2);
+        $("#price").val(col3);
+        $("#qty").val(col4);
+
+    });
+}
 
 
 
