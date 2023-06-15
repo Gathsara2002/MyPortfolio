@@ -80,6 +80,7 @@ $("#btnSaveCustomer").click(function () {
 
     $("#tblCustomer").append(row);*/
     getAllCustomer();
+    clearTextField();
 
 });
 
@@ -88,6 +89,7 @@ $("#btnSaveCustomer").click(function () {
 $("#btnGetAllCustomers").click(function () {
     getAllCustomer();
 });
+
 
 function getAllCustomer() {
     //clear table data
@@ -113,8 +115,8 @@ function getAllCustomer() {
     }
 }
 
-/*load customer details to place order form*/
 
+// load customer details to place order form
 /*set customer name to combo box*/
 function loadCustomerDetails() {
 
@@ -126,6 +128,7 @@ function loadCustomerDetails() {
         $("#cusId").append(`<option>${name}</option>`);
     }
 }
+
 
 /*set customer detail when combo box click*/
 $("#cusId").click(function () {
@@ -147,6 +150,7 @@ $("#cusId").click(function () {
     }
 });
 
+
 /*bind events to table*/
 function bindEventtoCustomer() {
     /*get customer detail from table*/
@@ -166,12 +170,15 @@ function bindEventtoCustomer() {
     });
 }
 
+
 /*delete customer*/
 $("#btnDeleteCustomer").click(function () {
     let cusName = $("#customerName").val();
     deleteCustomer(cusName);
     getAllCustomer();
+    clearTextField();
 });
+
 
 function deleteCustomer(id) {
     for (let i = 0; i < cusDB.length; i++) {
@@ -202,8 +209,20 @@ $("#btnUpdateCustomer").click(function () {
     cusDB.push(customer);
 
     getAllCustomer();
+    clearTextField();
 
 });
+
+
+/*clear text fields and focus on first text field*/
+function clearTextField() {
+    $("#customerName").val("");
+    $("#addressCus").val("");
+    $("#nicCus").val("");
+    $("#tpNo").val("");
+
+    $("#customerName").focus();
+}
 
 
 /*--------------------------------------------- item section----------------------------------------------------------*/
@@ -232,8 +251,8 @@ $("#btnSaveItem").click(function () {
 
 });
 
-/*load item details to place order form*/
 
+//load item details to place order form
 /*set item code to combo box*/
 function loadItemDetails() {
 
@@ -245,6 +264,7 @@ function loadItemDetails() {
         $("#itemCode").append(`<option>${code}</option>`);
     }
 }
+
 
 /*set item detail when combo box click*/
 $("#itemCode").click(function () {
@@ -265,6 +285,7 @@ $("#itemCode").click(function () {
         }
     }
 });
+
 
 function getAllItems() {
     $("#tblItem").empty();
@@ -290,10 +311,12 @@ function getAllItems() {
     }
 }
 
+
 /*add event to getAll Items Btn*/
 $("#btnGetAllItems").click(function () {
     getAllItems();
 });
+
 
 /*bind events to table*/
 function bindEventToItem() {
