@@ -35,13 +35,14 @@ document.getElementById("orders").addEventListener("click", function () {
     loadItemDetails();
 });
 
-/*add customer to table*/
-/*bind event to save customer*/
+
 
 /*---------------------------customer section--------------------------------------------------------------*/
 let cusDB = [];
 
 //save customer
+/*add customer to table*/
+/*bind event to save customer*/
 $("#btnSaveCustomer").click(function () {
 
     /*get customer details from input fields*/
@@ -109,7 +110,7 @@ function getAllCustomer() {
         $("#tblCustomer").append(row);
 
         /*invoke every time when new customer add to table*/
-        bindEvent();
+        bindEventtoCustomer();
     }
 }
 
@@ -148,7 +149,7 @@ $("#cusId").click(function () {
 });
 
 /*bind events to table*/
-function bindEvent() {
+function bindEventtoCustomer() {
     /*get customer detail from table*/
     $("#tblCustomer>tr").click(function () {
 
@@ -246,7 +247,7 @@ function getAllItems() {
 
         $("#tblItem").append(tRow);
 
-        bindEvent();
+        bindEventToItem();
 
     }
 }
@@ -257,7 +258,7 @@ $("#btnGetAllItems").click(function () {
 });
 
 /*bind events to table*/
-function bindEvent() {
+function bindEventToItem() {
     /*get customer detail from table*/
     $("#tblItem>tr").click(function () {
 
