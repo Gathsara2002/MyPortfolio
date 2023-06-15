@@ -182,6 +182,30 @@ function deleteCustomer(id) {
 }
 
 
+/*update customer*/
+$("#btnUpdateCustomer").click(function () {
+
+    let name = $("#customerName").val();
+    let address = $("#addressCus").val();
+    let nic = $("#nicCus").val();
+    let tel = $("#tpNo").val();
+
+    deleteCustomer(name);
+
+    let customer = {
+        cusName: name,
+        cusAddress: address,
+        cusNic: nic,
+        cusTele: tel
+    }
+
+    cusDB.push(customer);
+
+    getAllCustomer();
+
+});
+
+
 /*--------------------------------------------- item section----------------------------------------------------------*/
 
 let itemDB = [];
