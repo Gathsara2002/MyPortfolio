@@ -51,26 +51,17 @@ $("#btnSaveCustomer").click(function () {
     let tel = $("#tpNo").val();
 
     /*create new row*/
-    //let tRow = "<tr>" + "<td>" + name + "</td>" + "<td>" + address + "</td>" + "<td>" + nic + "</td>" + "<td>" + tel + "</td>" + "</tr>";
+    //let tRow = "<tr>" + "<td>" + name + "</td>"
+    // + "<td>" + address + "</td>" + "<td>" + nic + "</td>"
+    // + "<td>" + tel + "</td>" + "</tr>";
 
     /*append to tbody*/
     // $("#tblCustomer").append(tRow);
 
-    /*--------------------------------------------------------------------------------------------------------*/
+    /*-----------------------------------------------*/
     /*using array*/
-
     //let cusArray = [name, address, nic, tel];
-
     //customer object
-    let customer = {
-        cusName: name,
-        cusAddress: address,
-        cusNic: nic,
-        cusTele: tel
-    }
-
-    cusDB.push(customer);
-
     /*let row = `<tr>
         <td>${cusArray[0]}</td>
         <td>${cusArray[1]}</td>
@@ -79,8 +70,22 @@ $("#btnSaveCustomer").click(function () {
         </tr>`;
 
     $("#tblCustomer").append(row);*/
-    getAllCustomer();
-    clearTextField();
+
+    if (searchCustomer(nic)) {
+        alert("Customer already exists !")
+    } else {
+        let customer = {
+            cusName: name,
+            cusAddress: address,
+            cusNic: nic,
+            cusTele: tel
+        }
+
+        cusDB.push(customer);
+
+        getAllCustomer();
+        clearTextField();
+    }
 
 });
 
@@ -223,6 +228,52 @@ function clearTextField() {
 
     $("#customerName").focus();
 }
+
+
+/*search customer*/
+function searchCustomer(id) {
+    return cusDB.find(function (customer) {
+        //if the search id match with customer record
+        //then return that object
+        return customer.cusNic === id;
+    });
+}
+
+
+/*disable press tab*/
+$("#customerName,#addressCus,#nicCus,#tpNo").keydown(function (e) {
+    if (e.key==="Tab") {
+     e.preventDefault();
+    }
+});
+
+
+/*move with enter*/
+$("#customerName").keydown(function (e) {
+    if(e.key==="Enter"){
+        $("#addressCus").focus();
+    }
+});
+
+$("#addressCus").keydown(function (e) {
+    if(e.key==="Enter"){
+        $("#nicCus").focus();
+    }
+});
+
+$("#nicCus").keydown(function (e) {
+    if(e.key==="Enter"){
+        $("#tpNo").focus();
+    }
+});
+
+$("#tpNo").keydown(function (e) {
+    if(e.key==="Enter"){
+        $("#btnSaveCustomer").focus();
+    }
+});
+
+
 
 
 /*--------------------------------------------- item section----------------------------------------------------------*/
