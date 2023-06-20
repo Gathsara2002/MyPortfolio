@@ -1,6 +1,4 @@
 /*---------------------------customer section--------------------------------------------------------------*/
-let cusDB = [];
-
 //save customer
 /*add customer to table*/
 /*bind event to save customer*/
@@ -207,12 +205,12 @@ $("#customerId").keydown(function (e) {
 $("#customerName").keydown(function (e) {
 
     if (e.key === "Enter") {
-        let nameRegex=/^[a-zA-Z]+(([',. -][a-zA-Z ])?[a-zA-Z]*)*$/;
+        let nameRegex = /^[a-zA-Z]+(([',. -][a-zA-Z ])?[a-zA-Z]*)*$/;
         let name = $("#customerName").val();
         let isNameMatch = nameRegex.test(name);
         if (isNameMatch) {
             $("#addressCus").focus();
-        }else {
+        } else {
             alert("Invalid Customer Name ! ");
         }
     }
@@ -221,12 +219,12 @@ $("#customerName").keydown(function (e) {
 $("#addressCus").keydown(function (e) {
 
     if (e.key === "Enter") {
-        let addressRegex=/^[a-zA-Z]+(([',. -][a-zA-Z ])?[a-zA-Z]*)*$/;
+        let addressRegex = /^[a-zA-Z]+(([',. -][a-zA-Z ])?[a-zA-Z]*)*$/;
         let address = $("#addressCus").val();
         let isAddressMatch = addressRegex.test(address);
         if (isAddressMatch) {
             $("#tpNo").focus();
-        }else{
+        } else {
             alert("Invalid Customer Address ! ");
         }
     }
@@ -234,12 +232,12 @@ $("#addressCus").keydown(function (e) {
 
 $("#tpNo").keydown(function (e) {
     if (e.key === "Enter") {
-        let tpRegex=/^(0)[0-9]{9}/;
+        let tpRegex = /^(0)[0-9]{9}/;
         let tel = $("#tpNo").val();
         let isTpMatch = tpRegex.test(tel);
         if (isTpMatch) {
             $("#btnSaveCustomer").focus();
-        }else{
+        } else {
             alert("Invalid Telephone number  ! ");
         }
     }
