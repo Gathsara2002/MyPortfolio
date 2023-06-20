@@ -9,25 +9,6 @@ $("#btnGetAllCustomers").click(function () {
     getAllCustomer();
 });
 
-/*bind events to table*/
-function bindEventtoCustomer() {
-    /*get customer detail from table*/
-    $("#tblCustomer>tr").click(function () {
-
-        let col1 = $(this).children().eq(0).text();
-        let col2 = $(this).children().eq(1).text();
-        let col3 = $(this).children().eq(2).text();
-        let col4 = $(this).children().eq(3).text();
-
-        /*set values to input fields*/
-        $("#customerId").val(col1);
-        $("#customerName").val(col2);
-        $("#addressCus").val(col3);
-        $("#tpNo").val(col4);
-
-    });
-}
-
 /*delete customer*/
 $("#btnDeleteCustomer").click(function () {
     let id = $("#customerId").val();
@@ -107,7 +88,7 @@ function getAllCustomer() {
         $("#tblCustomer").append(row);
 
         /*invoke every time when new customer add to table*/
-        bindEventtoCustomer();
+        bindEventToCustomer();
     }
 }
 
@@ -153,5 +134,24 @@ function updateCustomer(id) {
         }
     }
 
+}
+
+/*bind events to table*/
+function bindEventToCustomer() {
+    /*get customer detail from table*/
+    $("#tblCustomer>tr").click(function () {
+
+        let col1 = $(this).children().eq(0).text();
+        let col2 = $(this).children().eq(1).text();
+        let col3 = $(this).children().eq(2).text();
+        let col4 = $(this).children().eq(3).text();
+
+        /*set values to input fields*/
+        $("#customerId").val(col1);
+        $("#customerName").val(col2);
+        $("#addressCus").val(col3);
+        $("#tpNo").val(col4);
+
+    });
 }
 

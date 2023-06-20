@@ -95,31 +95,6 @@ $("#tpNo").keydown(function (e) {
 
 /*--------------------------------------------- item section----------------------------------------------------------*/
 
-let itemDB = [];
-
-/*add item to table*/
-$("#btnSaveItem").click(function () {
-
-    /*get item details from input fields*/
-    let code = $("#itemCode1").val();
-    let name = $("#itemName1").val();
-    let price = $("#price").val();
-    let qty = $("#qty").val();
-
-    let itemObj = {
-        itemCode: code,
-        itemName: name,
-        itemPrice: price,
-        itemQty: qty
-    }
-
-    itemDB.push(itemObj);
-
-    getAllItems();
-
-});
-
-
 //load item details to place order form
 /*set item code to combo box*/
 function loadItemDetails() {
@@ -155,55 +130,6 @@ $("#itemCode").click(function () {
 });
 
 
-function getAllItems() {
-    $("#tblItem").empty();
-
-    for (let i = 0; i < itemDB.length; i++) {
-        let code = itemDB[i].itemCode;
-        let name = itemDB[i].itemName;
-        let price = itemDB[i].itemPrice;
-        let qty = itemDB[i].itemQty;
-
-        /*create new row*/
-        let tRow = ` <tr>
-        <td>${code}</td>
-        <td>${name}</td>
-        <td>${price}</td>
-        <td>${qty}</td>
-        </tr>`;
-
-        $("#tblItem").append(tRow);
-
-        bindEventToItem();
-
-    }
-}
-
-
-/*add event to getAll Items Btn*/
-$("#btnGetAllItems").click(function () {
-    getAllItems();
-});
-
-
-/*bind events to table*/
-function bindEventToItem() {
-    /*get customer detail from table*/
-    $("#tblItem>tr").click(function () {
-
-        let col1 = $(this).children().eq(0).text();
-        let col2 = $(this).children().eq(1).text();
-        let col3 = $(this).children().eq(2).text();
-        let col4 = $(this).children().eq(3).text();
-
-        /*set values to input fields*/
-        $("#itemCode1").val(col1);
-        $("#itemName1").val(col2);
-        $("#price").val(col3);
-        $("#qty").val(col4);
-
-    });
-}
 
 
 
