@@ -1,40 +1,6 @@
 /*---------------------------customer section--------------------------------------------------------------*/
 
 
-// load customer details to place order form
-/*set customer name to combo box*/
-function loadCustomerDetails() {
-
-    //clear combo box
-    $("#cusId").empty();
-
-    for (let i = 0; i < cusDB.length; i++) {
-        let id = cusDB[i].cusId;
-        $("#cusId").append(`<option>${id}</option>`);
-    }
-}
-
-
-/*set customer detail when combo box click*/
-$("#cusId").click(function () {
-
-    let cusName = $("#cusId").val();
-
-    for (let i = 0; i < cusDB.length; i++) {
-        if (cusName === cusDB[i].cusId) {
-            let address = cusDB[i].cusAddress;
-            let name = cusDB[i].cusName;
-            let tel = cusDB[i].cusTele;
-
-            //set values
-            $("#nic").val(nic);
-            $("#cusName").val(cusName);
-            $("#address").val(address);
-            $("#cusContact").val(tel);
-        }
-    }
-});
-
 
 /*move with enter*/
 $("#customerId").keydown(function (e) {
