@@ -45,39 +45,18 @@ let cusDB = [];
 $("#btnSaveCustomer").click(function () {
 
     /*get customer details from input fields*/
+    let id = $("#customerId").val();
     let name = $("#customerName").val();
     let address = $("#addressCus").val();
-    let nic = $("#nicCus").val();
     let tel = $("#tpNo").val();
-
-    /*create new row*/
-    //let tRow = "<tr>" + "<td>" + name + "</td>"
-    // + "<td>" + address + "</td>" + "<td>" + nic + "</td>"
-    // + "<td>" + tel + "</td>" + "</tr>";
-
-    /*append to tbody*/
-    // $("#tblCustomer").append(tRow);
-
-    /*-----------------------------------------------*/
-    /*using array*/
-    //let cusArray = [name, address, nic, tel];
-    //customer object
-    /*let row = `<tr>
-        <td>${cusArray[0]}</td>
-        <td>${cusArray[1]}</td>
-        <td>${cusArray[2]}</td>
-        <td>${cusArray[3]}</td>
-        </tr>`;
-
-    $("#tblCustomer").append(row);*/
 
     if (searchCustomer(nic)) {
         alert("Customer already exists !")
     } else {
         let customer = {
+            cusId: id,
             cusName: name,
             cusAddress: address,
-            cusNic: nic,
             cusTele: tel
         }
 
@@ -101,15 +80,15 @@ function getAllCustomer() {
     $("#tblCustomer").empty();
 
     for (let i = 0; i < cusDB.length; i++) {
+        let id = cusDB[i].cusId;
         let name = cusDB[i].cusName;
         let address = cusDB[i].cusAddress;
-        let nic = cusDB[i].cusNic;
         let tel = cusDB[i].cusTele;
 
         let row = `<tr>
+        <td>${id}</td>
         <td>${name}</td>
         <td>${address}</td>
-        <td>${nic}</td>
         <td>${tel}</td>
         </tr>`;
 
@@ -129,8 +108,8 @@ function loadCustomerDetails() {
     $("#cusId").empty();
 
     for (let i = 0; i < cusDB.length; i++) {
-        let name = cusDB[i].cusName;
-        $("#cusId").append(`<option>${name}</option>`);
+        let id = cusDB[i].cusId;
+        $("#cusId").append(`<option>${id}</option>`);
     }
 }
 
@@ -141,9 +120,9 @@ $("#cusId").click(function () {
     let cusName = $("#cusId").val();
 
     for (let i = 0; i < cusDB.length; i++) {
-        if (cusName === cusDB[i].cusName) {
+        if (cusName === cusDB[i].cusId) {
             let address = cusDB[i].cusAddress;
-            let nic = cusDB[i].cusNic;
+            let name = cusDB[i].cusName;
             let tel = cusDB[i].cusTele;
 
             //set values
@@ -167,9 +146,9 @@ function bindEventtoCustomer() {
         let col4 = $(this).children().eq(3).text();
 
         /*set values to input fields*/
-        $("#customerName").val(col1);
-        $("#addressCus").val(col2);
-        $("#nicCus").val(col3);
+        $("#customerId").val(col1);
+        $("#customerName").val(col2);
+        $("#addressCus").val(col3);
         $("#tpNo").val(col4);
 
     });
@@ -178,8 +157,8 @@ function bindEventtoCustomer() {
 
 /*delete customer*/
 $("#btnDeleteCustomer").click(function () {
-    let cusName = $("#customerName").val();
-    deleteCustomer(cusName);
+    let id = $("#customerId").val();
+    deleteCustomer(id);
     getAllCustomer();
     clearTextField();
 });
@@ -187,7 +166,7 @@ $("#btnDeleteCustomer").click(function () {
 
 function deleteCustomer(id) {
     for (let i = 0; i < cusDB.length; i++) {
-        if (cusDB[i].cusName === id) {
+        if (cusDB[i].cusId === id) {
             cusDB.splice(i, 1);
         }
     }
@@ -197,17 +176,17 @@ function deleteCustomer(id) {
 /*update customer*/
 $("#btnUpdateCustomer").click(function () {
 
+    let id = $("#customerId").val();
     let name = $("#customerName").val();
     let address = $("#addressCus").val();
-    let nic = $("#nicCus").val();
     let tel = $("#tpNo").val();
 
-    deleteCustomer(name);
+    deleteCustomer(id);
 
     let customer = {
+        cusId: id,
         cusName: name,
         cusAddress: address,
-        cusNic: nic,
         cusTele: tel
     }
 
@@ -223,10 +202,10 @@ $("#btnUpdateCustomer").click(function () {
 function clearTextField() {
     $("#customerName").val("");
     $("#addressCus").val("");
-    $("#nicCus").val("");
+    $("#customerId").val("");
     $("#tpNo").val("");
 
-    $("#customerName").focus();
+    $("#customerId").focus();
 }
 
 
@@ -235,45 +214,74 @@ function searchCustomer(id) {
     return cusDB.find(function (customer) {
         //if the search id match with customer record
         //then return that object
-        return customer.cusNic === id;
+        return customer.cusId === id;
     });
 }
 
 
 /*disable press tab*/
-$("#customerName,#addressCus,#nicCus,#tpNo").keydown(function (e) {
-    if (e.key==="Tab") {
-     e.preventDefault();
+$("#customerName,#addressCus,#customerId,#tpNo").keydown(function (e) {
+    if (e.key === "Tab") {
+        e.preventDefault();
     }
 });
 
 
 /*move with enter*/
+$("#customerId").keydown(function (e) {
+
+    if (e.key === "Enter") {
+        let idRegex = /^(C00-)[0-9]{3}$/;
+        let id = $("#customerId").val();
+        let isIdMatch = idRegex.test(id);
+        if (isIdMatch) {
+            $("#customerName").focus();
+        } else {
+            alert("Invalid Customer Id ! ");
+        }
+    }
+});
+
 $("#customerName").keydown(function (e) {
-    if(e.key==="Enter"){
-        $("#addressCus").focus();
+
+    if (e.key === "Enter") {
+        let nameRegex=/^[a-zA-Z]+(([',. -][a-zA-Z ])?[a-zA-Z]*)*$/;
+        let name = $("#customerName").val();
+        let isNameMatch = nameRegex.test(name);
+        if (isNameMatch) {
+            $("#addressCus").focus();
+        }else {
+            alert("Invalid Customer Name ! ");
+        }
     }
 });
 
 $("#addressCus").keydown(function (e) {
-    if(e.key==="Enter"){
-        $("#nicCus").focus();
-    }
-});
 
-$("#nicCus").keydown(function (e) {
-    if(e.key==="Enter"){
-        $("#tpNo").focus();
+    if (e.key === "Enter") {
+        let addressRegex=/^[a-zA-Z]+(([',. -][a-zA-Z ])?[a-zA-Z]*)*$/;
+        let address = $("#addressCus").val();
+        let isAddressMatch = addressRegex.test(address);
+        if (isAddressMatch) {
+            $("#tpNo").focus();
+        }else{
+            alert("Invalid Customer Address ! ");
+        }
     }
 });
 
 $("#tpNo").keydown(function (e) {
-    if(e.key==="Enter"){
-        $("#btnSaveCustomer").focus();
+    if (e.key === "Enter") {
+        let tpRegex=/^(0)[0-9]{9}/;
+        let tel = $("#tpNo").val();
+        let isTpMatch = tpRegex.test(tel);
+        if (isTpMatch) {
+            $("#btnSaveCustomer").focus();
+        }else{
+            alert("Invalid Telephone number  ! ");
+        }
     }
 });
-
-
 
 
 /*--------------------------------------------- item section----------------------------------------------------------*/
