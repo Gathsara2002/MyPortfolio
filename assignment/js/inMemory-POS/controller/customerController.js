@@ -28,6 +28,31 @@ function bindEventtoCustomer() {
     });
 }
 
+/*delete customer*/
+$("#btnDeleteCustomer").click(function () {
+    let id = $("#customerId").val();
+
+    let consent = confirm("Do you want to delete.?");
+    if (consent) {
+        let response = deleteCustomer(id);
+        if (response) {
+            alert("Customer Deleted");
+            clearCustomerInputFields();
+            getAllCustomer();
+        } else {
+            alert("Customer Not Removed..!");
+        }
+    }
+
+});
+
+/*update customer*/
+$("#btnUpdateCustomer").click(function () {
+    let id = $("#customerId").val();
+    updateCustomer(id);
+    clearCustomerInputFields();
+});
+
 
 /*crud operation functions*/
 
@@ -94,3 +119,39 @@ function searchCustomer(id) {
         return customer.cusId === id;
     });
 }
+
+/*delete customer function*/
+function deleteCustomer(id) {
+    for (let i = 0; i < cusDB.length; i++) {
+        if (cusDB[i].cusId === id) {
+            cusDB.splice(i, 1);
+            return true;
+        }
+    }
+    return false;
+}
+
+/*update customer function*/
+function updateCustomer(id) {
+    if (searchCustomer(id) === undefined) {
+        alert("No such Customer..please check the ID");
+    } else {
+        let consent = confirm("Do you really want to update this customer.?");
+        if (consent) {
+            let customer = searchCustomer(id);
+            //if the customer available can we update.?
+
+            let customerName = $("#customerName").val();
+            let customerAddress = $("#addressCus").val();
+            let customerTp = $("#tpNo").val();
+
+            customer.cusName = customerName;
+            customer.cusAddress = customerAddress;
+            customer.cusTele = customerTp;
+
+            getAllCustomer();
+        }
+    }
+
+}
+

@@ -36,49 +36,6 @@ $("#cusId").click(function () {
 });
 
 
-/*delete customer*/
-$("#btnDeleteCustomer").click(function () {
-    let id = $("#customerId").val();
-    deleteCustomer(id);
-    getAllCustomer();
-    clearTextField();
-});
-
-
-function deleteCustomer(id) {
-    for (let i = 0; i < cusDB.length; i++) {
-        if (cusDB[i].cusId === id) {
-            cusDB.splice(i, 1);
-        }
-    }
-}
-
-
-/*update customer*/
-$("#btnUpdateCustomer").click(function () {
-
-    let id = $("#customerId").val();
-    let name = $("#customerName").val();
-    let address = $("#addressCus").val();
-    let tel = $("#tpNo").val();
-
-    deleteCustomer(id);
-
-    let customer = {
-        cusId: id,
-        cusName: name,
-        cusAddress: address,
-        cusTele: tel
-    }
-
-    cusDB.push(customer);
-
-    getAllCustomer();
-    clearTextField();
-
-});
-
-
 /*move with enter*/
 $("#customerId").keydown(function (e) {
 
