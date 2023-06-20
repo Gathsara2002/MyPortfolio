@@ -1,63 +1,4 @@
 /*---------------------------customer section--------------------------------------------------------------*/
-//save customer
-/*add customer to table*/
-/*bind event to save customer*/
-$("#btnSaveCustomer").click(function () {
-
-    /*get customer details from input fields*/
-    let id = $("#customerId").val();
-    let name = $("#customerName").val();
-    let address = $("#addressCus").val();
-    let tel = $("#tpNo").val();
-
-    if (searchCustomer(nic)) {
-        alert("Customer already exists !")
-    } else {
-        let customer = {
-            cusId: id,
-            cusName: name,
-            cusAddress: address,
-            cusTele: tel
-        }
-
-        cusDB.push(customer);
-
-        getAllCustomer();
-        clearTextField();
-    }
-
-});
-
-
-/*get all customers*/
-$("#btnGetAllCustomers").click(function () {
-    getAllCustomer();
-});
-
-
-function getAllCustomer() {
-    //clear table data
-    $("#tblCustomer").empty();
-
-    for (let i = 0; i < cusDB.length; i++) {
-        let id = cusDB[i].cusId;
-        let name = cusDB[i].cusName;
-        let address = cusDB[i].cusAddress;
-        let tel = cusDB[i].cusTele;
-
-        let row = `<tr>
-        <td>${id}</td>
-        <td>${name}</td>
-        <td>${address}</td>
-        <td>${tel}</td>
-        </tr>`;
-
-        $("#tblCustomer").append(row);
-
-        /*invoke every time when new customer add to table*/
-        bindEventtoCustomer();
-    }
-}
 
 
 // load customer details to place order form
@@ -93,26 +34,6 @@ $("#cusId").click(function () {
         }
     }
 });
-
-
-/*bind events to table*/
-function bindEventtoCustomer() {
-    /*get customer detail from table*/
-    $("#tblCustomer>tr").click(function () {
-
-        let col1 = $(this).children().eq(0).text();
-        let col2 = $(this).children().eq(1).text();
-        let col3 = $(this).children().eq(2).text();
-        let col4 = $(this).children().eq(3).text();
-
-        /*set values to input fields*/
-        $("#customerId").val(col1);
-        $("#customerName").val(col2);
-        $("#addressCus").val(col3);
-        $("#tpNo").val(col4);
-
-    });
-}
 
 
 /*delete customer*/
@@ -155,35 +76,6 @@ $("#btnUpdateCustomer").click(function () {
     getAllCustomer();
     clearTextField();
 
-});
-
-
-/*clear text fields and focus on first text field*/
-function clearTextField() {
-    $("#customerName").val("");
-    $("#addressCus").val("");
-    $("#customerId").val("");
-    $("#tpNo").val("");
-
-    $("#customerId").focus();
-}
-
-
-/*search customer*/
-function searchCustomer(id) {
-    return cusDB.find(function (customer) {
-        //if the search id match with customer record
-        //then return that object
-        return customer.cusId === id;
-    });
-}
-
-
-/*disable press tab*/
-$("#customerName,#addressCus,#customerId,#tpNo").keydown(function (e) {
-    if (e.key === "Tab") {
-        e.preventDefault();
-    }
 });
 
 
