@@ -74,7 +74,14 @@ $("#btnCart").click(function () {
 /*display sub total after press enter*/
 $("#discount").keydown(function (e) {
     if (e.key === "Enter") {
-       findSubTotal();
+        findSubTotal();
+    }
+});
+
+/*display balance*/
+$("#cash").keydown(function (e) {
+    if (e.key==="Enter"){
+        findBalance();
     }
 });
 
@@ -149,14 +156,26 @@ function findSubTotal() {
 
     let discount = $("#discount").val();
 
-    if (discount==='0') {
+    if (discount === '0') {
         let val = $("#total").val();
         $("#subTotal").val(val);
-    }else {
+    } else {
         let dis = parseInt(discount);
-        let value = payTot*dis/100;
-        let subTot = payTot-value;
+        let value = payTot * dis / 100;
+        let subTot = payTot - value;
         $("#subTotal").val(subTot);
     }
 }
 
+/*find balance method*/
+function findBalance() {
+    let cash = $("#cash").val();
+    let subTot = $("#subTotal").val();
+
+    let val1 = parseInt(cash);
+    let val2 = parseInt(subTot);
+
+    let balance = val1 - val2;
+
+    $("#balance").val(balance);
+}
