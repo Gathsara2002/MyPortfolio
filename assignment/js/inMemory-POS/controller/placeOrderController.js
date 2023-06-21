@@ -44,7 +44,6 @@ function loadItemDetails() {
     }
 }
 
-
 /*set item detail when combo box click*/
 $("#itemCode").click(function () {
 
@@ -64,4 +63,65 @@ $("#itemCode").click(function () {
         }
     }
 });
+
+/*set order detail to table*/
+$("#btnCart").click(function () {
+    saveOrderDetails();
+});
+
+let buyQty = 0;
+let total = 0;
+let unitPrice = 0;
+
+/*add details to order table*/
+function saveOrderDetails() {
+    let code = $("#itemCode").val();
+    let name = $("#itemName").val();
+    let price = $("#unitPrice").val();
+    let qty = $("#buyQrt").val();
+
+    buyQty = parseInt(qty);
+    unitPrice = parseFloat(price);
+    total = buyQty * unitPrice;
+
+    let newOrder = Object.assign({}, placeOrder);
+    newOrder.itemCode = code;
+    newOrder.itemName = name;
+    newOrder.itemPrice = price;
+    newOrder.qty = qty;
+    newOrder.total = total;
+
+    placeOrderDB.push(newOrder);
+    getAllOrders();
+    clearFields();
+}
+
+function getAllOrders() {
+
+    $("#orderTable").empty();
+
+    for (let i = 0; i < placeOrderDB.length; i++) {
+        let code = placeOrderDB[i].itemCode;
+        let name = placeOrderDB[i].itemName;
+        let price = placeOrderDB[i].itemPrice;
+        let qty = placeOrderDB[i].qty;
+        let total = placeOrderDB[i].total;
+
+        let trow = `<tr>
+            <td>${code}</td>
+            <td>${name}</td>
+            <td>${price}</td>
+            <td>${qty}</td>
+            <td>${total}</td>
+        </tr>`;
+
+        $("#orderTable").append(trow);
+
+    }
+
+}
+
+function clearFields() {
+    $("#itemCode,#itemName,#unitPrice,#buyQrt").val("");
+}
 
