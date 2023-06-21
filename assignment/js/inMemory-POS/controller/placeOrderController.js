@@ -69,7 +69,13 @@ $("#btnCart").click(function () {
     saveOrderDetails();
     findTotal();
     $("#total").val(payTot);
-    $("#subTotal").val(payTot);
+});
+
+/*display sub total after press enter*/
+$("#discount").keydown(function (e) {
+    if (e.key === "Enter") {
+       findSubTotal();
+    }
 });
 
 let buyQty = 0;
@@ -129,12 +135,28 @@ function clearFields() {
 }
 
 /*to find and display total in payments details*/
-let payTot=0;
+let payTot = 0;
 
 function findTotal() {
-    payTot=0;
+    payTot = 0;
     for (let i = 0; i < placeOrderDB.length; i++) {
         payTot += placeOrderDB[i].total;
+    }
+}
+
+/*find sub total after discount*/
+function findSubTotal() {
+
+    let discount = $("#discount").val();
+
+    if (discount==='0') {
+        let val = $("#total").val();
+        $("#subTotal").val(val);
+    }else {
+        let dis = parseInt(discount);
+        let value = payTot*dis/100;
+        let subTot = payTot-value;
+        $("#subTotal").val(subTot);
     }
 }
 
