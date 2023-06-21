@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <title>CSS Framework - POS</title>
@@ -220,7 +220,7 @@
                 </div>
                 <div class="mb-3">
                     <label for="qty" class="form-label">Qty On Hand</label>
-                    <input type="number" class="form-control" id="qty">
+                    <input type="number" class="form-control" id="qty" min="0">
                 </div>
             </form>
 
@@ -390,7 +390,7 @@
                         <div class="col-6">
                             <form>
                                 <label for="discount" class="form-label">Discount</label>
-                                <input type="number" class="form-control" id="discount">
+                                <input type="number" class="form-control" id="discount" min="0" value="0">
                             </form>
                         </div>
                         <div class="col-6">
