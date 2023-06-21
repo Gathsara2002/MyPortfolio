@@ -80,9 +80,19 @@ $("#discount").keydown(function (e) {
 
 /*display balance*/
 $("#cash").keydown(function (e) {
-    if (e.key==="Enter"){
+    if (e.key === "Enter") {
         findBalance();
     }
+});
+
+/*purchase function*/
+$("#btnPurchase").click(function () {
+    updateItem();
+    clearFields();
+    $("#orderTable").empty();
+    //if placeOrder array not empty.every time previous order details automatically adds to order table
+    placeOrderDB = [];
+    alert("Order complete !");
 });
 
 let buyQty = 0;
@@ -109,7 +119,7 @@ function saveOrderDetails() {
 
     placeOrderDB.push(newOrder);
     getAllOrders();
-    clearFields();
+    //clearFields();
 }
 
 function getAllOrders() {
@@ -138,7 +148,8 @@ function getAllOrders() {
 }
 
 function clearFields() {
-    $("#itemName,#unitPrice,#buyQrt,#qtyOnHand").val("");
+    $("#itemName,#unitPrice,#buyQrt,#qtyOnHand,#total,#subTotal,#cash,#balance,#date,#orderId,#cId,#cusName,#address,#cusContact").val("");
+    $("#discount").val('0');
 }
 
 /*to find and display total in payments details*/
@@ -178,4 +189,31 @@ function findBalance() {
     let balance = val1 - val2;
 
     $("#balance").val(balance);
+}
+
+/*update item qty method*/
+function updateItem() {
+    let qtyOnHand = $("#qtyOnHand").val();
+    let buyQty = $("#buyQrt").val();
+    let code = $("#itemCode").val();
+
+    let val1 = parseInt(qtyOnHand);
+    let val2 = parseInt(buyQty);
+
+    let newQty = val1 - val2;
+
+    updateItemQty(code, newQty);
+}
+
+/*update item function*/
+function updateItemQty(code, qty) {
+    let item1 = searchItem(code);
+    let itemName = $("#itemName").val();
+    let itemPrice = $("#unitPrice").val();
+
+    item1.itemName = itemName;
+    item1.itemPrice = itemPrice;
+    item1.itemQty = qty;
+
+    getAllItems();
 }
