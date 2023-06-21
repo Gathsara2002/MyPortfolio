@@ -67,6 +67,9 @@ $("#itemCode").click(function () {
 /*set order detail to table*/
 $("#btnCart").click(function () {
     saveOrderDetails();
+    findTotal();
+    $("#total").val(payTot);
+    $("#subTotal").val(payTot);
 });
 
 let buyQty = 0;
@@ -122,6 +125,16 @@ function getAllOrders() {
 }
 
 function clearFields() {
-    $("#itemCode,#itemName,#unitPrice,#buyQrt").val("");
+    $("#itemName,#unitPrice,#buyQrt,#qtyOnHand").val("");
+}
+
+/*to find and display total in payments details*/
+let payTot=0;
+
+function findTotal() {
+    payTot=0;
+    for (let i = 0; i < placeOrderDB.length; i++) {
+        payTot += placeOrderDB[i].total;
+    }
 }
 
