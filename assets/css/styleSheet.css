@@ -887,7 +887,7 @@ main > section:nth-child(6) > section#thirdProject > div:nth-child(2) {
 /*Assignments*/
 main > section:nth-child(7) {
     width: 100%;
-    height: 950px;
+    height: 1250px;
     position: relative;
 }
 
@@ -990,6 +990,39 @@ main > section:nth-child(7) > section#thirdAssignmentRow > a {
 }
 
 main > section:nth-child(7) > section#thirdAssignmentRow > a > div {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+}
+
+main > section:nth-child(7) > section#fourthAssignmentRow {
+    width: 1300px;
+    height: 300px;
+    position: absolute;
+    top: 975px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-between;
+}
+
+main > section:nth-child(7) > section#fourthAssignmentRow > a {
+    width: 250px;
+    height: 200px;
+    box-shadow: 5px 5px 5px 2px gray;
+    position: relative;
+}
+
+main > section:nth-child(7) > section#fourthAssignmentRow > a > div {
     width: 100%;
     height: 100%;
     position: absolute;
@@ -1151,6 +1184,56 @@ div.case12 {
     background-image: url("../videos/Screen Recording - 17 May 2023 (8).gif");
     background-position: center;
     background-size: cover;
+}
+
+/*fourth row of assignments*/
+main > section:nth-child(7) > section#fourthAssignmentRow > h5:nth-child(2) {
+    position: absolute;
+    top: 180px;
+    left: 65px;
+}
+
+main > section:nth-child(7) > section#fourthAssignmentRow > h5:nth-child(4) {
+    position: absolute;
+    top: 180px;
+    left: 418px;
+}
+
+main > section:nth-child(7) > section#fourthAssignmentRow > h5:nth-child(6) {
+    position: absolute;
+    top: 180px;
+    left: 766px;
+}
+
+main > section:nth-child(7) > section#fourthAssignmentRow > h5:nth-child(8) {
+    position: absolute;
+    top: 180px;
+    right: 65px;
+}
+
+div.case13 {
+    background-image: url("../videos/Screen Recording - June 22, 2023 (3).gif");
+    background-position: center;
+    background-size: cover;
+}
+
+div.case14 {
+    background-image: url("../videos/Screen Recording - June 22, 2023 (4).gif");
+    background-position: center;
+    background-size: cover
+}
+
+div.case15 {
+    background-image: url("../videos/Screen Recording - June 22, 2023 (2).gif");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+div.case16 {
+    background-image: url("../videos/Screen Recording - June 22, 2023 (1).gif");
+    background-position: center;
+    background-size: contain;
 }
 
 main > section:nth-child(7) > section > a:hover {
