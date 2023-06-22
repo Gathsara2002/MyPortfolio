@@ -1241,6 +1241,10 @@ main > section:nth-child(7) > section > a:hover {
     transform: scale(1.1);
 }
 
+main > section:nth-child(7) > a {
+    visibility: hidden;
+}
+
 
 /*8 th section*/
 /*contact*/
@@ -2334,6 +2338,37 @@ footer > small:nth-child(3) {
         display: none;
     }
 
+    main > section:nth-child(7) > a {
+        visibility: visible;
+        height: 40px;
+        width: 130px;
+        position: absolute;
+        top: 170px;
+        left: 90px;
+        font-size: 17px;
+        background-color: #48dbfb;
+        border: 1px solid #48dbfb;
+        border-radius: 5px;
+    }
+
+    main > section:nth-child(7) > a > button {
+        background-color: #48dbfb;
+        border: none;
+        position: absolute;
+        top: 9px;
+        left: 20px;
+        font-weight: bold;
+    }
+
+    main > section:nth-child(7) > a:hover {
+        background-color: #1B1464;
+        color: white;
+    }
+
+    main > section:nth-child(7) > a > button:hover {
+        background-color: #1B1464;
+    }
+
     /*-------------------------------------------------------------------------------------------------*/
     main > section:nth-child(8) {
         width: 100%;
@@ -3295,7 +3330,7 @@ footer > small:nth-child(3) {
     /*-----------------------------------------------------------------------------------------------*/
     main > section:nth-child(7) {
         width: 100%;
-        height: 225px;
+        height: 245px;
         position: relative;
     }
 
@@ -3412,6 +3447,37 @@ footer > small:nth-child(3) {
 
     main > section:nth-child(7) > section#fourthAssignmentRow > h5 {
         display: none;
+    }
+
+    main > section:nth-child(7) > a {
+        visibility: visible;
+        height: 50px;
+        width: 150px;
+        position: absolute;
+        top: 180px;
+        left: 110px;
+        font-size: 20px;
+        background-color: #48dbfb;
+        border: 1px solid #48dbfb;
+        border-radius: 10px;
+    }
+
+    main > section:nth-child(7) > a > button {
+        background-color: #48dbfb;
+        border: none;
+        position: absolute;
+        top: 11px;
+        left: 23px;
+        font-weight: bold;
+    }
+
+    main > section:nth-child(7) > a:hover {
+        background-color: #1B1464;
+        color: white;
+    }
+
+    main > section:nth-child(7) > a > button:hover {
+        background-color: #1B1464;
     }
 
     /*------------------------------------------------------------------------------------------------*/
@@ -4379,7 +4445,7 @@ footer > small:nth-child(3) {
     /*--------------------------------------------------------------------------------------*/
     main > section:nth-child(7) {
         width: 100%;
-        height: 235px;
+        height: 275px;
         position: relative;
     }
 
@@ -4395,7 +4461,7 @@ footer > small:nth-child(3) {
 
     main > section:nth-child(7) > section#firstAssignmentRow {
         width: 380px;
-        height: 200px;
+        height: 140px;
         position: absolute;
         top: 55px;
         bottom: 0;
@@ -4498,6 +4564,36 @@ footer > small:nth-child(3) {
         display: none;
     }
 
+    main > section:nth-child(7) > a {
+        visibility: visible;
+        height: 50px;
+        width: 150px;
+        position: absolute;
+        top: 200px;
+        left: 140px;
+        font-size: 20px;
+        background-color: #48dbfb;
+        border: 1px solid #48dbfb;
+        border-radius: 10px;
+    }
+
+    main > section:nth-child(7) > a > button {
+        background-color: #48dbfb;
+        border: none;
+        position: absolute;
+        top: 11px;
+        left: 23px;
+        font-weight: bold;
+    }
+
+    main > section:nth-child(7) > a:hover {
+        background-color: #1B1464;
+        color: white;
+    }
+
+    main > section:nth-child(7) > a > button:hover {
+        background-color: #1B1464;
+    }
 
     /*------------------------------------------------------------------------------------------*/
     main > section:nth-child(8) {
