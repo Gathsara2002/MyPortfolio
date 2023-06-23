@@ -46,6 +46,12 @@ nav > menu > li > a {
     color: black;
 }
 
+/*hover animation in to nav list*/
+nav > menu > li > a:hover {
+    color: #1D3F72;
+    font-weight: bold;
+}
+
 
 /* create styles for <main> */
 main {
