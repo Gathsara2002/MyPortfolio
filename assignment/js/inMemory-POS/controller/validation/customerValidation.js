@@ -6,7 +6,7 @@ const CUS_TEL_REGEX = /^[0-9]{2,}$/;
 
 //add validations and text fields to the array
 let c_vArray = [];
-c_vArray.push({field: $("#customerId"), regEx: CUS_ID_REGEX, error: 'Item Code Pattern Is Wrong : C00-001'});
+c_vArray.push({field: $("#customerId"), regEx: CUS_ID_REGEX, error: 'Code Pattern Is Wrong : C00-001'});
 c_vArray.push({field: $("#customerName"), regEx: CUS_NAME_REGEX, error: 'Name Pattern Is Wrong : A-z'});
 c_vArray.push({field: $("#addressCus"), regEx: CUS_ADDRESS_REGEX, error: 'Address Pattern Is Wrong.'});
 c_vArray.push({field: $("#tpNo"), regEx: CUS_TEL_REGEX, error: 'Contact Pattern Is Wrong.'});
