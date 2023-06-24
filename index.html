@@ -381,12 +381,25 @@
 
     </section>
 
+    <div id="loader">
+        <div><img src="assets/images/loadingIcon.gif" alt=""></div>
+    </div>
+
 </main>
 
 <footer>
     <small>Copyright © Gathsara 2023. All right reserved.</small> <br>
     <small>Developed by : Gathsara Liviru</small>
 </footer>
+
+<script>
+    let loader = document.getElementById("loader");
+    window.addEventListener("load", function () {
+        console.log("This message will print just after fully loading the website");
+        //hide the loader
+        loader.style.display = 'none';
+    });
+</script>
 
 </body>
 

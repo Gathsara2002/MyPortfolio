@@ -2594,6 +2594,40 @@ footer > small:nth-child(3) {
 
 }
 
+/*add loader*/
+#loader {
+    transition: opacity 1s;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: white;
+}
+
+#loader > div {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    background-size: cover;
+    background-position: center;
+}
+
+#loader>div>img{
+    position: fixed;
+    width: 100px;
+    height: 100px;
+    right: 5px;
+    bottom: 5px;
+    z-index: 2;
+}
+
+
 /*Responsive to 375px*/
 
 @media all and (min-width: 321px) and (max-width: 376px) {
