@@ -52,6 +52,21 @@ nav > menu > li > a:hover {
     font-weight: bold;
 }
 
+header > h2 {
+    margin: 0;
+    display: inline-block;
+    position: absolute;
+    top: 25px;
+    left: 50px;
+    font-family: sans-serif;
+    font-size: 30px;
+    color: #1d3f72;
+}
+
+header > h2 > span {
+    color: coral;
+}
+
 
 /* create styles for <main> */
 main {
@@ -1483,6 +1498,39 @@ footer > small:nth-child(3) {
     display: inline-block;
 }
 
+/*add loader*/
+#loader {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: black;
+    z-index: 2;
+}
+
+#loader > div {
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    background-size: cover;
+    background-position: center;
+}
+
+#loader > div > img {
+    position: fixed;
+    width: 400px;
+    height: 400px;
+    z-index: 2;
+}
+
 
 /*responsive to 320px*/
 
@@ -1505,6 +1553,10 @@ footer > small:nth-child(3) {
         position: fixed;
         top: 0;
         z-index: 1;
+    }
+
+    header>h2{
+        display: none;
     }
 
     header > nav {
@@ -2594,40 +2646,6 @@ footer > small:nth-child(3) {
 
 }
 
-/*add loader*/
-#loader {
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    background: black;
-    z-index: 2;
-}
-
-#loader > div {
-    width: 600px;
-    height: 600px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    margin: auto;
-    background-size: cover;
-    background-position: center;
-}
-
-#loader>div>img{
-    position: fixed;
-    width: 600px;
-    height: 600px;
-    z-index: 2;
-}
-
-
 /*Responsive to 375px*/
 
 @media all and (min-width: 321px) and (max-width: 376px) {
@@ -2649,6 +2667,10 @@ footer > small:nth-child(3) {
         position: fixed;
         top: 0;
         z-index: 1;
+    }
+
+    header > h2 {
+        display: none;
     }
 
     header > nav {
@@ -3759,6 +3781,10 @@ footer > small:nth-child(3) {
         position: fixed;
         top: 0;
         z-index: 1;
+    }
+
+    header > h2 {
+        display: none;
     }
 
     header > nav {
