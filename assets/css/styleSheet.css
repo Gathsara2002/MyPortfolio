@@ -1189,7 +1189,7 @@ div.case9 {
 }
 
 div.case10 {
-    background-image: url("../videos/Screen Recording - 17 May 2023 (9).gif");
+    background-image: url("../videos/Screen Recording - June 26, 2023.gif");
     background-position: center;
     background-size: cover;
 }
@@ -1513,7 +1513,7 @@ footer > small:nth-child(3) {
 
 #loader > div {
     width: 400px;
-    height: 400px;
+    height: 300px;
     position: absolute;
     top: 0;
     left: 0;
@@ -1527,7 +1527,7 @@ footer > small:nth-child(3) {
 #loader > div > img {
     position: fixed;
     width: 400px;
-    height: 400px;
+    height: 300px;
     z-index: 2;
 }
 
