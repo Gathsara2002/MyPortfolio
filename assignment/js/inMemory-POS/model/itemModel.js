@@ -2,5 +2,5 @@ let item = {
     itemCode: "",
     itemName: "",
     itemPrice: "",
-    itemQty: ""
+    itemQty: 0
 }

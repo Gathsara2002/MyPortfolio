@@ -1,7 +1,7 @@
 // validation for customers
 const CUS_ID_REGEX = /^(C00-)[0-9]{3}$/;
-const CUS_NAME_REGEX = /^[A-Za-z ]{5,}$/;
-const CUS_ADDRESS_REGEX = /^[A-Za-z0-9 ]{8,}$/;
+const CUS_NAME_REGEX = /^[A-Za-z ]{4,}$/;
+const CUS_ADDRESS_REGEX = /^[A-Za-z0-9 ]{5,}$/;
 const CUS_TEL_REGEX = /^[0-9]{2,}$/;
 
 //add validations and text fields to the array

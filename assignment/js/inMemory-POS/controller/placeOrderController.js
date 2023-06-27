@@ -87,7 +87,7 @@ $("#cash").keydown(function (e) {
 
 /*purchase function*/
 $("#btnPurchase").click(function () {
-    updateItem();
+    updateItemInPO();
     clearFields();
     $("#orderTable").empty();
     //if placeOrder array not empty.every time previous order details automatically adds to order table
@@ -192,7 +192,7 @@ function findBalance() {
 }
 
 /*update item qty method*/
-function updateItem() {
+function updateItemInPO() {
     let qtyOnHand = $("#qtyOnHand").val();
     let buyQty = $("#buyQrt").val();
     let code = $("#itemCode").val();

@@ -1,3 +1,6 @@
+/*get existing customers*/
+getAllCustomer();
+
 /*add customer to table*/
 /*bind event to save customer*/
 $("#btnSaveCustomer").click(function () {

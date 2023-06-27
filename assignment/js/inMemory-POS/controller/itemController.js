@@ -1,3 +1,6 @@
+/*to get existing items*/
+getAllItems();
+
 /*add event to getAll Items Btn*/
 $("#btnGetAllItems").click(function () {
     getAllItems();

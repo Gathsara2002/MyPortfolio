@@ -1,9 +1,12 @@
 let cusDB = [
-    /*  {id: "C00-001", name: "Sachin Thamalsha", address: "Mathara", salary: 100000},
-      {id: "C00-002", name: "Ranjith Perera", address: "Panadura", salary: 200000},
-      {id: "C00-003", name: "Kavindu Perera", address: "Panadura", salary: 300000}*/
+      {cusId: "C00-001", cusName: "Gathsara", cusAddress: "Ambalangoda", cusTele: 763412498},
+      {cusId: "C00-002", cusName: "Kavindu", cusAddress: "Galle", cusTele: 771231234}
+
 ];
 
-let itemDB = [];
+let itemDB = [
+    {itemCode:"I00-001",itemName:"Rice",itemPrice:"200",itemQty:250},
+    {itemCode:"I00-002",itemName:"Dal",itemPrice:"300",itemQty:200}
+];
 
 let placeOrderDB=[];
