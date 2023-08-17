@@ -94,7 +94,7 @@ function inputCusSuccess(textField, error) {
         defaultCusText(textField, "");
     } else {
         textField.css('border', '2px solid green');
-        textField.parent().children('span').text(error);
+        textField.parent().children('small').text(error);
     }
 }
 
@@ -104,7 +104,7 @@ function inputCusError(textField, error) {
         defaultCusText(textField, "");
     } else {
         textField.css('border', '2px solid red');
-        textField.parent().children('span').text(error);
+        textField.parent().children('small').text(error);
     }
 }
 
@@ -119,5 +119,5 @@ function setCusBtnState(val) {
 
 function defaultCusText(textField, error) {
     textField.css("border", "1px solid #ced4da");
-    textField.parent().children('span').text(error);
+    textField.parent().children('small').text(error);
 }

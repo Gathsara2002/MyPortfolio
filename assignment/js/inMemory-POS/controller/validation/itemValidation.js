@@ -8,7 +8,7 @@ const ITEM_QTY_REGEX = /^[0-9]+$/;
 let i_vArray = new Array();
 i_vArray.push({field: $("#itemCode1"), regEx: ITEM_CODE_REGEX, error: 'Item Code Pattern Is Wrong : I00-001'});
 i_vArray.push({
-    field: $("#itemName1"), regEx: ITEM_NAME_REGEX, error: 'Item Name Pattern Is Wrong : A-z 0-9 Ex: Naadu 5kg'
+    field: $("#itemName1"), regEx: ITEM_NAME_REGEX, error: 'Item Name Pattern Is Wrong : A-z 0-9 Ex: Naadu'
 });
 i_vArray.push({field: $("#price"), regEx: ITEM_PRICE_REGEX, error: 'Item Price Pattern Is Wrong : 100 or 100.00'});
 i_vArray.push({field: $("#qty"), regEx: ITEM_QTY_REGEX, error: 'Item Quantity Pattern Is Wrong : 0-9'});
